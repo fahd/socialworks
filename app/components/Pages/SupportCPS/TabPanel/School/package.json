@@ -1,0 +1,6 @@
+{
+  "name": "CPS_School",
+  "version": "0.0.0",
+  "private": true,
+  "main": "./CPS_School.js"
+}

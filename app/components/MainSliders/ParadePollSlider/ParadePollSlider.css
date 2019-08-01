@@ -1,0 +1,144 @@
+.container {
+  height: 100vh;
+  position: relative;
+  overflow: hidden;
+}
+
+.background {
+  width: 100%;
+  height: 100%;
+}
+
+.content {
+  max-width: 1080px;
+  margin: 0 auto;
+  padding-top: 30px;
+  margin-top: 140px;
+  height: 100%;
+
+}
+
+.bg {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  bottom: 0px;
+  right: 0px;
+  background: url(https://dh136thgitkrt.cloudfront.net/parade-cover-desktop.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+  opacity: 1;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  opacity: 0.9;
+  background: linear-gradient(160deg, #ff776a 20%, #E91E63 80%);
+}
+
+.content-meta {
+  position: absolute;
+  margin: 0 auto;
+  width: 100%;
+  max-width: 1080px;
+  padding-top: 80px;
+  padding-left: 50px;
+  padding-right:50px;
+  text-align:left;
+  left: 0;
+  right: 0;
+  margin: auto;
+
+}
+
+.meta {
+  font-family: Lato;
+  -webkit-font-smoothing: antialiased;
+  color: #FFF;
+}
+.meta:hover{
+  color: #FFF;
+}
+.title{
+  font-weight: 700;
+  font-size: 80px;
+  /*text-shadow: 0px 1px 2px rgba(0,0,0,0.62);*/
+  margin-top: 0;
+  margin-bottom: 8px;
+}
+
+.subtitle {
+  font-size: 36px;
+  font-weight: 300;
+  line-height: 24px;
+}
+
+.btn-info{
+  display:block;
+  margin-top:20px;
+}
+
+.button{
+  display:inline-block;
+  padding: 10px 40px;
+  font-size: 20px;
+  border-radius: 48px;
+  border: 1px solid #FFF;
+}
+
+@media (max-width: 768px) {
+  .content {
+    margin-top: 120px;
+  }
+
+
+    .container {
+      height: 70vh;
+    }
+
+
+  .content-meta{
+    padding-top: 20px;
+    padding-left: 30px;
+    padding-right:30px;
+    text-align: center;
+  }
+
+  .subtitle {
+    font-size: 24px;
+  }
+
+  .title{
+    font-weight: 700;
+    font-size: 36px;
+    /*text-shadow: 0px 1px 2px rgba(0,0,0,0.62);*/
+    margin-top: 0;
+    margin-bottom: 8px;
+  }
+}
+
+
+@media (min-width: 768px) {
+  .content-meta{
+    padding-top: 40px;
+  }
+}
+
+@media (min-width: 992px) {
+  .content-meta{
+    padding-top: 80px;
+  }
+}
+
+@media (min-width: 1200px) {}
+
+@media only screen and (max-device-width: 768px){
+  .container {
+    height: 90vh;
+  }
+}

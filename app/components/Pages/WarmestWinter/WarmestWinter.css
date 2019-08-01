@@ -1,0 +1,747 @@
+@font-face {
+  font-family: 'Bebas-Book';
+  src: url('/fonts/bebas-book.otf');
+}
+
+@font-face {
+  font-family: 'Bebas-Bold';
+  src: url('/fonts/bebas-bold.otf');
+}
+
+.main-header-container {
+  margin: 48px auto 96px;
+}
+
+
+.header-about {
+  font-size: 19px !important;
+}
+
+.intro {
+  padding-top: 20px;
+  margin: 0 auto;
+  margin-bottom: 10px;
+}
+
+.about-subtitle {
+  color: #333;
+  font-size: 24px;
+  font-weight: 300;
+}
+
+.content {
+  max-width: 1080px;
+  margin: 60px auto;
+  height: 100%;
+  width: 100%;
+  max-width: 1080px;
+  padding: 75px 50px;
+  text-align: center;
+}
+
+.slogan {
+  width: 730px;
+  max-width: 100%;
+  margin: 0 auto;
+}
+
+.header-subtitle {
+  color: #666;
+  font-size: 22px;
+  font-weight: 300;
+}
+
+.header-description {
+  line-height: 1.4em;
+  text-align: left;
+  margin-top: 15px;
+}
+
+
+.cover {}
+
+.title {
+  color: #484848;
+  font-size: 42px;
+  margin-bottom: 10px;
+  font-weight: 400;
+  padding-top: 48px;
+  padding-bottom: 48px;
+  font-family: 'Lato' !important;
+  letter-spacing: -0.01em;
+}
+
+.ww-title {
+  color: #FFF;
+  font-weight: 700;
+  font-size: 8em;
+  text-transform: uppercase;
+  margin: 0px auto;
+  font-family: 'Bebas-Bold' !important;
+  /*text-shadow: 0px 1px 2px rgba(0,0,0,1.74);*/
+}
+
+.numbers {
+  color: #FFF;
+  font-weight: 700;
+  text-transform: uppercase;
+  margin: 0px auto;
+  font-family: 'Bebas-Bold' !important;
+  font-size: 4em;
+}
+
+.ww-numbers-title {
+  font-size: 8em !important;
+}
+
+.ww-numbers-subtitle {
+  font-size: 4em !important;
+}
+
+.subtitle {
+  font-size: 36px;
+  color: #FFF;
+  letter-spacing: 0.08em;
+  font-family: 'Bebas-Regular' !important;
+}
+
+.ww-subtitle {
+  font-size: 24px;
+}
+
+.ww-analysis-subtitle {
+  font-weight: 300;
+  font-size: 24px !important;
+}
+
+.image-center {
+  text-align: center;
+}
+
+
+/*Old Styles*/
+
+.header, .about-header, .numbers-header {
+  position: relative;
+  overflow: hidden;
+}
+
+.header {
+  height: 92vh;
+}
+
+.empwr-header {
+  height: 70vh;
+}
+
+.empwr-photo {
+  background-position: center !important;
+}
+
+.about-header {
+  min-height: 300px;
+}
+
+.header-photo {
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  background: transparent;
+  background-attachment: fixed;
+  background: url(https://dh136thgitkrt.cloudfront.net/warmestwinter/warmest-winter.jpeg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  opacity: 1;
+}
+
+.header-container, .about-header-container {
+  margin-top: 140px;
+  padding-top: 70px;
+}
+
+.about-header-container {
+  margin-bottom: 140px;
+}
+
+.numbers-container {
+  margin-top: 50px;
+  margin-bottom: 50px;
+}
+
+.header-overlay, .about-header-overlay, .numbers-overlay, .numbers-bg, .empwr-overlay{
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  opacity: 0.95;
+}
+
+.numbers-overlay {
+  background: #232323;
+  opacity: 0.5;
+}
+.empwr-overlay {
+  background: #232323;
+  opacity: 0.2;
+}
+
+.numbers-bg {
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  background: transparent;
+  background-attachment: fixed;
+  background: url(https://dh136thgitkrt.cloudfront.net/chicago-illinois-winter.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  opacity: 1;
+}
+
+.header-overlay {
+  background: linear-gradient(120deg, #ff776a 20%, #E91E63 80%);
+}
+
+.about-header-overlay {
+  background: linear-gradient(to bottom, #ccc 10%, #adadad 90%);
+}
+
+.meta {
+  font-family: Lato;
+  -webkit-font-smoothing: antialiased;
+}
+
+.about-header-meta {
+  padding-top: 50px;
+  padding-bottom: 50px;
+  background-color: rgba(255, 255, 255, 0.75)!important;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.text-left {
+  text-align: left;
+}
+
+.fade-in {
+  animation-name: fadeInHeader;
+  animation-duration: 1s;
+  animation-fill-mode: both;
+}
+
+@keyframes fadeInHeader {
+  0% {
+    opacity: 0;
+    transform: translateY(-20px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.button {
+  margin-top: 5px;
+  display: inline-block;
+  padding: 10px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  text-align: center;
+  font-size: 2em;
+  font-family: 'Bebas-Book' !important;
+  background: transparent;
+  border: 2px solid #FFF;
+  transition: background-color .2s ease;
+}
+
+.button:hover {
+  background-color: rgba(0, 0, 0, 0.15);
+  color: #FFF;
+}
+
+.parade-media {
+  position: relative;
+  overflow: hidden;
+  /*min-height: 400px;*/
+  min-height: 300px;
+}
+
+.parade-cover-block {
+  backface-visibility: hidden;
+  overflow: hidden;
+  background-color: #FFF;
+}
+
+.parade-cover-meta {
+  display: table;
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+
+.parade-numbers {
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+
+.meta-middle {
+  vertical-align: middle;
+  display: table-cell;
+  color: #fff;
+  padding: 0% 5%;
+  padding-bottom: 0;
+}
+
+.coats-header {
+  display: block;
+  text-align: center;
+  padding: 0 !important;
+}
+
+.parade-title, .analysis-text {
+  color: #666;
+  text-align: left;
+  font-size: 22px;
+  font-weight: 300;
+  margin-bottom: 10px;
+}
+
+.analysis-text {
+  font-size: 19px;
+  margin-left: 40px;
+  font-weight: 300;
+}
+
+.logo-left {
+  float: left;
+}
+
+.about-title {
+  font-size: 28px;
+  font-weight: 300;
+  color: #484848;
+  padding-bottom: 0px;
+}
+
+.footer-banner {
+  background: #FFF;
+  width: 100%;
+  min-height: 300px;
+}
+
+.footer-photo {
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  background: transparent;
+  background: url(https://dh136thgitkrt.cloudfront.net/warmestwinter/WarmestWinterCoat.png);
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: bottom center;
+  opacity: 1;
+}
+
+.about-container {
+  position: relative;
+}
+
+.coat-container {}
+
+.meta-coat {
+  display: block;
+}
+
+.space-u-1 {
+  margin-top: 0px;
+  margin-bottom: 64px;
+}
+
+.analysis-title {
+  padding-top: 0px;
+  padding-bottom: 0px;
+  font-weight: 300;
+  font-size: 48px;
+}
+
+.empty-space-top {
+  margin-top: 48px;
+}
+
+.empty-space {
+  margin-top: 48px;
+  margin-bottom: 48px;
+}
+
+/*.statistics-container {
+  padding-left: 48px;
+  padding-right: 48px;
+}*/
+
+.empty-space-bottom {
+  margin-bottom: 48px;
+}
+
+.media-photo {
+  backface-visibility: hidden;
+  position: relative;
+  display: inline-block;
+  vertical-align: bottom;
+  overflow: hidden;
+  background-color: #bbb;
+  border-radius: 50%;
+}
+
+.media-photo>img {
+  width: 30px;
+  height: 30px;
+  object-fit: cover;
+}
+
+.ww-header {
+  font-size: 3.5em;
+  font-weight: 300;
+  letter-spacing: -0.02em;
+}
+
+.coats-title {
+  font-size: 4em;
+  font-weight: 300;
+  padding-top:64px;
+  padding-bottom: 64px;
+  letter-spacing: -3px;
+  margin-top: 0;
+}
+
+.ww-header-coat {
+  font-size: 5em;
+  font-weight: 400;
+  text-align: left;
+}
+
+.numbers-content {
+  margin: 0;
+}
+
+.stats {
+  display: inline-block;
+  padding: 40px;
+}
+
+.ww-numbers-subtitle {
+
+  font-size: 3em;
+}
+
+.meta-spacing {
+  margin-bottom: 48px;
+}
+
+.label {
+  display: block;
+  height: 30px;
+  width: 30px;
+  line-height: 25px;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  border-radius: 50%;
+  text-align: center;
+  border: 2px solid #767676;
+  color: #767676;
+}
+
+.coat-label {
+  display: block;
+  height: 30px;
+  width: 30px;
+  line-height: 30px;
+  text-align: center;
+  color: #484848;
+}
+
+.gallery div a img {
+  object-fit: cover;
+  opacity: .7;
+  transition: all .2s ease-in-out;
+  max-width: 100%;
+  max-height: 300px;
+}
+
+.gallery > div > a > img:nth-child(3) {
+  object-fit: cover;
+  object-position: 0% 0%;
+
+}
+
+.gallery div a img:hover {
+  object-fit: cover;
+  opacity: 1;
+  -moz-transform: scale(1.1);
+  -webkit-transform: scale(1.1);
+  transform: scale(1.1);
+}
+
+.gallery div {
+  display: block;
+  border-radius: 5px;
+  background: #FFF !important;
+  transition: all .2s ease-in-out;
+  overflow: hidden;
+}
+
+/*Video settings*/
+.video-cover-block {
+  backface-visibility: hidden;
+  overflow: hidden;
+  background-color: #ff9074;
+  height: 450px;
+}
+
+
+.video-cover-photo {
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  background: transparent;
+  background-attachment: fixed;
+  background: url(https://dh136thgitkrt.cloudfront.net/parade_cover.JPG);
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.video-title {
+  color: #FFF;
+  font-size: 48px;
+  font-weight: 700;
+  margin-bottom: 10px;
+}
+
+.cause-subtitle{
+  font-size: 18px;
+  font-weight: 300;
+  color: #FFF;
+}
+
+/*about empower*/
+.col-table{
+  display: table;
+  min-height: 500px;
+  width: 100%;
+  background-color: #333;
+  padding: 0;
+}
+
+.col-video {
+  display: table-cell;
+  height: 100%;
+  width:60%;
+  overflow: hidden;
+  background: url(https://dh136thgitkrt.cloudfront.net/warmestwinter/empwr-cover.jpg);
+  background-size: cover;
+  background-position:center;
+  text-align: center;
+  position: relative;
+}
+
+
+.pull-left{
+  float:left;
+}
+
+
+.empwr-content {
+  display: table-cell;
+  height: 100%;
+  padding: 60px;
+}
+
+.video-container {
+  padding: 0;
+  overflow: hidden;
+}
+
+
+.play-video {
+  display: inline-block;
+  position: absolute;
+  display: table-cell;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  transform: translateY(50%);
+}
+
+.video-icon:hover {
+  cursor: pointer;
+}
+
+.col-top {
+  height: 60vh;
+  width: 100%;
+}
+
+.iframe {
+  vertical-align: bottom !important;
+  border: none !important;
+  border: 0;
+  width: 100%;
+  height: 100%;
+  display: block;
+  position: absolute;
+  left: 0px;
+  top: 0px;
+  z-index: 1;
+}
+
+.show-video{
+  z-index: 1;
+}
+
+@media (max-width: 768px) {
+  .table-video {
+    display: none;
+  }
+
+  .coats-title {
+    font-size: 3em;
+  }
+
+  .ww-title{
+    font-size: 4em;
+  }
+
+  .ww-subtitle{
+    font-size: 24px;
+  }
+
+  .header-container {
+    margin-top: 100px;
+    padding-top:80px;
+  }
+
+  .header-description{
+    font-size: 19px !important;
+  }
+
+  .meta-middle {
+    padding: 0px !important;
+  }
+
+  .container {
+    max-width: 696px !important;
+  }
+  .ww-header {
+    font-size: 2em;
+    padding: 24px 0px 0px 15px;
+  }
+
+  .ww-numbers-title {
+    font-size: 4em !important;
+  }
+
+  .ww-numbers-subtitle {
+    font-size: 2em !important;
+  }
+
+  .stats {
+    padding: 5px;
+  }
+
+  .content {
+    padding: 20px;
+    text-align: left;
+  }
+
+}
+
+@media (min-width: 768px) {
+  .table-video {
+    display: none;
+  }
+  .col-top {
+    display: block;
+  }
+
+  .ww-title{
+    font-size: 5em;
+  }
+
+  .ww-subtitle{
+    font-size: 32px;
+  }
+
+  .stats {
+    padding: 20px;
+  }
+
+
+}
+@media (max-width: 992px) {
+
+  .empwr-content {
+    display: block;
+    max-width: 696px;
+    margin: 0 auto;
+    height: 100%;
+    padding: 60px;
+  }
+
+  .pull-left {
+    float: none;
+  }
+
+  .analysis-title {
+    font-size: 36px;
+  }
+
+}
+
+@media (min-width: 992px) {
+  .table-video {
+    display: table-cell;
+  }
+  .ww-title{
+    font-size: 5em;
+  }
+
+  .col-top {
+    display: none;
+  }
+
+  .stats {
+    padding: 40px;
+  }
+
+}
+
+@media (min-width: 1200px) {
+  .ww-title{
+    font-size: 7em;
+  }
+
+  .main-header-container {
+    width: 1080px !important;
+  }
+}
+
+@media only screen and (max-device-width: 768px){
+  .header-container {
+    padding-top: 60px;
+  }
+  .ww-title {
+    font-size: 3em;
+  }
+}

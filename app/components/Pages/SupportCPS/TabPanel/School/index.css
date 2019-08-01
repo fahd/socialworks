@@ -1,0 +1,394 @@
+@font-face {
+  font-family: 'Bebas-Bold';
+  src: url('/fonts/bebas-bold.otf');
+}
+
+.ww-title {
+  color: #FFF;
+  font-weight: 700;
+  font-size: 8em;
+  margin: 0px auto;
+  font-family: 'Lato' !important;
+  /*text-shadow: 0px 1px 2px rgba(0,0,0,1.74);*/
+}
+
+
+.largeText {
+  font-size: 2em !important;
+}
+
+.text-body {
+  /*line-height: 25px;*/
+  margin: 20px 0px;
+  /*font-family: 'Proxima Nova';*/
+  font-family: 'Lato';
+  text-align: left;
+  white-space: normal;
+}
+
+.text {
+  font-weight: 300;
+  font-size: 24px;
+  letter-spacing: -0.2px;
+}
+
+
+/*Old Styles*/
+
+.main-header {
+  position: relative;
+  overflow: hidden;
+  background-color: #fff;
+  min-height: 90vh;
+}
+
+.bg, .overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+}
+
+.bg {
+  background-image: url('https://dh136thgitkrt.cloudfront.net/smartkids.jpg');
+  opacity: 1;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.overlay {
+  background: #333;
+  opacity: 0.8;
+}
+
+.header {
+  position: relative;
+  overflow: hidden;
+}
+
+.outcome {
+  color: #FFF !important;
+}
+
+.outcome-subtitle {
+  color: #FFF !important;
+  font-size: 22px;
+  font-weight: 300;
+  max-width: 750px;
+  margin: 30px auto;
+  font-family: 'Bebas-Bold';
+  text-transform: uppercase;
+  font-weight: 300 !important;
+  line-height: 27px;
+  text-align: center;
+}
+
+.dropdown {
+  margin: 30px auto;
+}
+
+.warning {
+  color: #fff !important;
+  text-align: center;
+}
+
+.button-container {
+  margin: 24px 5px;
+}
+
+.action-button {
+  padding: 10px 30px;
+}
+
+.button, .button:visited {
+  display: inline-block;
+  padding: 10px;
+  padding-left: 20px;
+  padding-right: 20px;
+  font-size: 23px;
+  font-family: Lato;
+  -webkit-font-smoothing: antialiased;
+  font-weight: 400;
+  letter-spacing: -1px;
+  color: #fff;
+  background-color: #ff6a6a;
+  border: 2px solid #FF6a6a;
+  border-radius: 28px;
+  transition: all .3s;
+  outline: none;
+  box-shadow: 2px 4px 8px 0px rgba(46, 61, 73, 0.2);
+}
+
+.button:hover, .button:focus {
+  text-decoration: none;
+}
+
+.cps-button {
+  background-color: #6ab1ff !important;
+  border: 1px solid #6ab1ff !important;
+}
+
+.contact-info {
+  margin: 0px 5px;
+  color: #6ab1ff !important;
+}
+
+.contact-info:hover, .contact-info:active, .contact-info:focus {
+  text-decoration: none !important;
+}
+
+.invest-subtitle {
+  font-size: 19px;
+  font-weight: 300;
+  line-height: 27px;
+}
+
+.invest-subtitle {
+  font-family: 'Lato';
+}
+
+.tweet-link {
+  margin-top: 40px;
+  margin-bottom: 20px;
+  display: inline-block;
+  width: auto;
+  height: auto;
+  background-color: #fc7473;
+  color: #fff;
+  font-size: 17px;
+  border-radius: 300px;
+  padding: 10px 60px;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, .12), 0 1px 2px rgba(0, 0, 0, .24);
+  -webkit-transition: .1s all linear;
+  -moz-transition: .1s all linear;
+  -o-transition: .1s all linear;
+  transition: .1s all linear;
+}
+
+.tweet-link:hover, .tweet-link:active, .tweet-link:focus, .tweet-link:visited {
+  text-decoration: none !important;
+  color: #fff;
+}
+
+.header-photo {
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  background: transparent;
+  background-attachment: fixed;
+  background: url(https://dh136thgitkrt.cloudfront.net/warmestwinter/warmest-winter.jpeg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  opacity: 1;
+}
+
+.header-container {
+  margin-top: 50px;
+}
+.header-title {
+  max-width: 750px;
+  margin: 0 auto;
+}
+
+.header-overlay, .about-header-overlay, .numbers-overlay, .numbers-bg, .empwr-overlay {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  opacity: 0.95;
+}
+
+.header-overlay {
+  background: linear-gradient(120deg, #ff776a 20%, #E91E63 80%);
+}
+
+.meta {
+  -webkit-font-smoothing: antialiased;
+  font-weight: 300;
+}
+
+.text-title {
+  font-weight: 400;
+  font-size: 36px;
+  margin: 20px auto;
+  letter-spacing: -1px;
+}
+
+.text-subtitle {
+  font-weight: 300;
+  font-size: 24px;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.fade-in {
+  animation-name: fadeInHeader;
+  animation-duration: 1s;
+  animation-fill-mode: both;
+}
+
+
+/* Card Container */
+
+
+/*.news-item {
+   padding-left: 7px;
+   padding-right: 7px;
+ }*/
+
+.news-link:hover, .news-link:active, .news-link:visited, .news-link:focus {
+  text-decoration: none !important;
+}
+
+.card-container {
+  overflow: hidden;
+  position: relative;
+  box-shadow: 0px 3px 4px rgba(0, 0, 0, .1), 0px 0 2px rgba(0, 0, 0, .1);
+  border-top-left-radius: 3px;
+  border-top-right-radius: 3px;
+  transition: transform .24s, box-shadow .24s;
+  font-family: Lato;
+  font-size: 16px;
+  padding: 20px;
+  color: #333;
+  text-overflow: ellipsis;
+}
+
+.card-container:hover {
+  box-shadow: 12px 15px 20px 4px rgba(46, 61, 73, 0.15);
+}
+
+.card-image {
+  top: 0px;
+  bottom: 0px;
+  left: 0px;
+  right: 0px;
+  position: absolute;
+  height: 300px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  width: 100%;
+}
+
+.card-fader {
+  background-image: url(https://dh136thgitkrt.cloudfront.net/openmike/openmike-newscard-1.jpg);
+}
+
+.card-image-container {
+  position: relative;
+  width: 100%;
+  z-index: 0;
+}
+
+.card-text {
+  border-radius: 2px;
+  position: relative;
+  padding: 10px 20px;
+  height: 10em;
+  background-color: #fcfcfc;
+}
+
+.card-text-content {
+  font-family: Lato;
+  position: relative;
+  -webkit-font-smoothing: antialiased;
+}
+
+.card-meta {
+  display: inline-block;
+  padding-bottom: 10px;
+}
+
+.card-icon {
+  width: 40px;
+  height: 40px;
+  border-radius: 2px;
+  background-color: red;
+  display: inline-block;
+  vertical-align: middle;
+  background-size: contain;
+}
+
+.icon-fader {
+  background-image: url(https://dh136thgitkrt.cloudfront.net/openmike/fader-icon.png)
+}
+
+.card-brand {
+  display: inline-block;
+  vertical-align: middle;
+  color: #333 !important;
+  text-decoration: none !important;
+  padding: 10px;
+  font-size: 16px;
+}
+
+.card-text-title {
+  color: #333;
+  font-size: 24px;
+  margin-top: 15px;
+  margin-bottom: 5px;
+  font-weight: 300;
+  line-height: 24px;
+  text-align: left;
+}
+
+.parade-title-content {
+  vertical-align: middle;
+  display: block;
+  color: #FFF !important;
+}
+
+
+
+.empty-space-bottom {
+  margin-bottom: 48px;
+}
+
+@media (max-width: 768px) {
+  .ww-title {
+    font-size: 4em;
+  }
+  .ww-subtitle {
+    font-size: 24px;
+  }
+  .text-title {
+    font-size: 36px;
+  }
+  .invest-subtitle {
+    margin: 0px;
+    font-size: 19px;
+  }
+}
+
+@media (min-width: 768px) {
+  .ww-title {
+    font-size: 7em;
+  }
+}
+
+@media (max-width: 992px) {}
+
+@media (min-width: 992px) {}
+
+@media (min-width: 1200px) {
+  .ww-title {
+    font-size: 5em;
+  }
+}
+
+@media only screen and (max-device-width: 768px) {
+  .header-container {
+    padding-top: 40px;
+  }
+  .ww-title {
+    font-size: 3em;
+  }
+}

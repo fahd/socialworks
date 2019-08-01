@@ -1,0 +1,386 @@
+.container {
+  position: relative;
+  background-color: #FFF;
+  padding-left: 7px;
+  padding-right: 7px;
+  max-width: 650px;
+  width: 90%;
+}
+
+.name {
+  /*border-bottom: 1px solid #ddd;*/
+  white-space: initial;
+  overflow: initial;
+}
+
+.fund-cover {
+  max-width: 1080px;
+  margin: 0 auto;
+  background-image: url('https://dh136thgitkrt.cloudfront.net/cover-robeson2.jpg');
+  background-size: cover;
+  background-repeat:no-repeat;
+  background-position: center;
+  height: 80vh;
+}
+
+.header-img {
+  max-width: 100%;
+}
+
+.text-content {
+  font-family: 'Lato';
+  color: #484848;
+  margin: 40px 0px;
+}
+
+.text-body-wrapper {
+  margin:10px 0px 70px;
+}
+
+.text {
+  font-weight: 300;
+  font-size: 20px;
+  letter-spacing: -0.2px;
+}
+
+.text-signature {
+  width: 100%;
+}
+
+.text-signature-name {
+  font-weight: 600 !important;
+  color: #000;
+  font-size: 22px;
+}
+
+.text-signature-role {
+  font-weight: 300 !important;
+  color: #000;
+  font-size: 22px;
+}
+
+.text-header {
+  margin: 0px;
+  letter-spacing: -0.02em;
+  padding-top: 5px;
+  padding-bottom: 5px !important;
+}
+
+.text-subtitle {
+  font-size: 24px;
+  font-weight: 300;
+}
+
+.text-signature {
+  font-size: 16px;
+  margin-top: -5px;
+  display: inline-block;
+  text-align: center !important;
+}
+
+.text-body {
+  word-wrap: break-word !important;
+  /*line-height: 25px;*/
+  margin: 20px 0px;
+  /*font-family: 'Proxima Nova';*/
+  font-family: 'Lato';
+  text-align: left;
+}
+
+.text-body-close {
+  margin: 0px;
+}
+
+.icon {
+  background: url('/full-icon.png') center no-repeat;
+  height: 120px;
+  width: 120px;
+  margin: 0 auto;
+  background-size: contain;
+}
+
+.button-container {
+  margin: 24px 5px;
+}
+
+.action-button {
+  padding: 10px 30px;
+}
+
+.button, .button:visited {
+  display: inline-block;
+  padding: 10px;
+  padding-left: 20px;
+  padding-right: 20px;
+  font-size: 23px;
+  font-family: Lato;
+  -webkit-font-smoothing: antialiased;
+  font-weight: 400;
+  letter-spacing: -1px;
+  color: #fff;
+  background-color: #fff;
+  border: 2px solid #FF6a6a;
+  border-radius: 28px;
+  transition: all .3s;
+  outline: none;
+  box-shadow: 2px 4px 8px 0px rgba(46, 61, 73, 0.2);
+}
+
+.button:hover, .button:focus {
+  text-decoration: none;
+}
+
+.cps-button {
+  background-color: #ff6a6a !important;
+  border: 1px solid #ff6a6a !important;
+}
+
+.avatar-photos {
+  margin-right: 10px;
+  display: inline-block;
+  vertical-align: middle;
+}
+
+.avatar-image {
+  width: 64px;
+  height: 64px;
+  vertical-align: bottom;
+  object-fit: cover;
+  border-radius: 50%;
+  box-shadow: 0 0 0 2px white;
+  position: relative;
+  z-index: 2;
+}
+
+.avatar-image:hover {
+  cursor: pointer;
+}
+
+.avatar-image:nth-child(2) {
+  z-index: 3;
+  margin-left: -4px;
+}
+
+.avatar-image:nth-child(3) {
+  z-index: 4;
+  margin-left: -8px;
+}
+
+.slick {
+  overflow: hidden;
+}
+
+.link, .link:hover, .link:active, .link:focus, .link:visited {
+  color: #333;
+  font-weight: 400;
+  text-decoration: none;
+  margin-left: 4px;
+  margin-right: 4px;
+}
+
+.donate-scroll, .donate-scroll:hover, .donate-scroll:active, .donate-scroll:focus, .donate-scroll:visited {
+  font-weight: 400;
+  text-decoration: none;
+  color: #fff !important;
+  cursor: pointer;
+  margin-right: 5px;
+}
+
+
+/*Sign Up Section*/
+
+.text-title, .text-subtitle {
+  font-weight: 300;
+  font-size: 54px;
+  text-align: left;
+  font-family: 'Lato';
+  letter-spacing: -0.04em;
+  margin: 0px;
+  word-wrap: break-word;
+  /*text-shadow: 0px 1px 2px rgba(0,0,0,0.62);*/
+}
+.text-subtitle{
+  font-weight: 300 !important;
+  letter-spacing: -0.02em;
+  font-size: 24px;
+  text-align: left;
+  margin: 0px;
+  word-wrap: break-word;
+  /*text-shadow: 0px 1px 2px rgba(0,0,0,0.62);*/
+}
+
+.textQuoteSubtitle {
+  font-size: 22px;
+  margin-bottom: 60px !important;
+  font-weight: 300;
+
+}
+
+
+.text-quote {
+  margin: 50px 0px;
+}
+
+.text-quote > .text{
+  font-weight: 400 !important;
+  font-family: 'Lato';
+  font-size: 48px;
+  color: #333;
+  line-height: 56px;
+  margin: 60px 0px 10px;
+  letter-spacing: -0.03em;
+
+}
+
+.social-links {
+  text-align: left;
+}
+
+.fa:first-child {
+  color: #333 !important;
+  font-size: 2em !important;
+  padding: 20px;
+  padding-left: 0px;
+}
+
+.last-link {
+  color: #6ab1ff !important;
+  font-weight: 400;
+}
+
+.last-link:hover, .last-link:active, .last-link:focus, .last-link:visited {
+  text-decoration: none !important;
+}
+
+.text-subtitle {
+  font-size: 24px;
+  font-weight: 300;
+}
+
+.donate-container {
+  position: relative;
+  overflow: hidden;
+  z-index: 100;
+  height: 30vh;
+}
+
+.donate-overlay {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  bottom: 0px;
+  right: 0px;
+  background: linear-gradient(160deg, #ff776a 20%, #E91E63 80%);
+}
+
+.donate-content {
+  vertical-align: middle;
+  display: table-cell;
+  text-align: left;
+  float: none;
+  width: 100%;
+}
+
+.donate-text {
+  margin: 0 5%;
+}
+
+.meta {
+  font-family: "Lato";
+  color: #FFF;
+  -webkit-font-smoothing: antialiased;
+}
+
+.button, .button:visited {
+  display: inline-block;
+  padding: 10px;
+  padding-left: 20px;
+  padding-right: 20px;
+  font-size: 23px;
+  font-family: Lato;
+  -webkit-font-smoothing: antialiased;
+  font-weight: 400;
+  color: #fff;
+  background-color: transparent;
+  border: 2px solid #FF6a6a;
+  border-radius: 28px;
+  transition: all .3s;
+  outline: none;
+}
+
+.button:hover, .button:focus {
+  background: #FFF;
+  color: #fff !important;
+  text-decoration: none;
+}
+
+.button-container {
+  margin-top: 24px;
+}
+
+.action-button {
+  padding: 10px 30px;
+}
+
+.fa {
+  margin-left: 5px;
+  font-size: 1.1em;
+}
+
+.header-container {
+  position: relative;
+  padding-left: 30px;
+  padding-right: 30px;
+  height: 100%;
+}
+
+.header-content {
+  vertical-align: middle;
+  display: table-cell;
+  text-align: left;
+  float: none;
+  width: 100%;
+}
+
+.header-text {
+  margin: 0 5%;
+}
+
+
+/* End Card Styling*/
+
+@media (max-width: 768px) {
+  .text-signature-close {
+    margin: 20px 0px;
+  }
+  .donate-title {
+    font-size: 36px !important;
+  }
+  .text-title {
+    font-size: 36px;
+  }
+  .text {
+    font-size: 19px !important;
+  }
+
+  .text-subtitle {
+    font-size: 19px;
+    margin: 30px 0px;
+  }
+
+  .fund-cover {
+    height: 40vh;
+    margin: 10px;
+  }
+
+  .text-quote > .text {
+    font-size: 36px !important;
+    line-height: 40px !important;
+  }
+}
+
+@media (min-width: 768px) {}
+
+@media (min-width: 992px) {}
+
+@media (min-width: 1200px) {}

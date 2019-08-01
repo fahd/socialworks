@@ -1,0 +1,92 @@
+.header {
+  position: relative;
+  overflow: hidden;
+}
+
+.header{
+  height:80vh;
+}
+
+.header-photo {
+  position: absolute;
+  top: 0;
+    left: 0;
+  bottom: 0;
+  right: 0;
+  background: transparent;
+  background-attachment: fixed;
+  background: url(https://dh136thgitkrt.cloudfront.net/about-founders.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.image-logo {
+  width: 150px;
+  display: inline-block !important;
+}
+
+
+.header-container {
+  margin-top: 190px;
+}
+
+.header-overlay {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  opacity: 0.4;
+  background: #232323;
+}
+
+.meta {
+  font-family: Lato;
+  font-weight: 700;
+  -webkit-font-smoothing: antialiased;
+}
+
+.header-meta {
+
+}
+
+.title {
+  color: #FFF;
+  font-size: 64px;
+  margin-bottom: 10px;
+}
+
+.subtitle{
+  font-weight: 300;
+  font-size: 24px;
+  color: #FFF;
+  margin-top:10px;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.fade-in {
+  animation-name: fadeInHeader;
+  animation-duration: 1s;
+  animation-fill-mode: both;
+}
+
+@keyframes fadeInHeader {
+  0% {
+     opacity: 0;
+     transform: translateY(-20px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@media only screen and (max-device-width: 768px){
+  .header-container {
+    margin-top:160px;
+  }
+}

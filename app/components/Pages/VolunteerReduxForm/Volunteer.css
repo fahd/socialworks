@@ -1,0 +1,292 @@
+.container {
+  position: relative;
+  overflow: hidden;
+  z-index: 100;
+  height: 60vh;
+}
+
+.bg, .overlay {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  bottom: 0px;
+  right: 0px;
+}
+
+.bg {
+  background: url(https://dh136thgitkrt.cloudfront.net/volunteer/volunteer-cover.jpg);
+  background-size: cover;
+  background-position: top center;
+  top: -50%;
+  background-repeat: no-repeat;
+  opacity: 0.5;
+}
+
+.overlay {
+  background: linear-gradient(160deg, #ff776a 20%, #E91E63 80%);
+  z-index: 51;
+  opacity: .85;
+}
+
+.header-container {
+  position: relative;
+  padding-left: 30px;
+  padding-right: 30px;
+  height: 100%;
+}
+
+.header-content {
+  vertical-align: middle;
+  display: table-cell;
+  text-align: left;
+  float: none;
+  width: 100%;
+}
+
+.header-text {
+  margin: 0 10% 0 5%;
+}
+
+.meta {
+  font-family: Lato;
+  -webkit-font-smoothing: antialiased;
+  color: #FFF;
+}
+
+.title {
+  font-size: 64px;
+  font-weight: 300;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  text-shadow: 0px 2px 2px rgba(0, 0, 0, 0.32);
+}
+
+.subtitle {
+  font-size: 24px;
+  text-shadow: 0px 2px 2px rgba(0, 0, 0, 0.32);
+}
+
+.modal {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  text-align: center;
+  bottom: 0;
+}
+
+.modal-inner {
+  top: 40%;
+  left: 0;
+  right: 0;
+  margin: auto;
+  transform: translateY(-50%);
+  position: absolute;
+  margin: 0 auto;
+}
+
+
+/*Volunteer Section*/
+
+.container--responsive {
+  position: relative;
+  background-color: #FFF;
+  padding-left: 24px;
+  padding-right: 24px;
+}
+
+.logo-left {
+  float: left;
+  position: absolute;
+  left: -15px;
+}
+
+.label {
+  display: block;
+  height: 30px;
+  width: 30px;
+  line-height: 25px;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  border-radius: 50%;
+  text-align: center;
+  border: 2px solid #787878;
+  color: #787878;
+}
+
+.input-label {
+  font-weight: 300;
+}
+
+.text-content {
+  font-family: Lato;
+  color: #484848;
+}
+
+.text-header {
+  margin: 0px;
+  letter-spacing: -0.02em;
+  padding-top: 5px;
+  padding-bottom: 5px !important;
+}
+
+.text-title {
+  font-weight: 300;
+  font-size: 64px;
+  margin-bottom: 8px;
+  /*text-shadow: 0px 1px 2px rgba(0,0,0,0.62);*/
+}
+
+.text-body {
+  font-weight: 300;
+  word-wrap: break-word;
+  line-height: 25px;
+  word-wrap: break-word !important;
+  font-size: 22px;
+  line-height: 28px;
+  letter-spacing: -0.2px;
+}
+
+.volunteer-subtitle {
+  font-size: 28px;
+}
+
+
+/* Form Details */
+
+.input-container input[type='text'], .event-group input[type='email'], .event-group input[type='password'] {
+  font-size: 19px !important;
+  line-height: 24px !important;
+  letter-spacing: undefined !important;
+  padding-top: undefined !important;
+  padding-bottom: undefined !important;
+  color: #484848 !important;
+  margin: 0px !important;
+  font-weight: 300 !important;
+  background-color: transparent !important;
+  border: 1px solid #ddd;
+  padding: 11px !important;
+  width: 100% !important;
+  outline: none;
+}
+
+.input-container input:focus {
+  border: 1px solid #ffb95f;
+}
+
+.location-error div input {
+  border: 1px solid red !important;
+}
+
+
+/*Text area*/
+
+.textarea textarea {
+  width: 100%;
+  height: 35px;
+  background: #FFF;
+  border: 1px solid #ddd;
+  border-radius: 3px;
+  margin: 10px auto;
+  outline: none;
+  padding: 10px 16px;
+  display: block;
+  font-size: 18px;
+  transition: opacity 0.4s;
+  text-align: left;
+  line-height: 1.33;
+  -webkit-appearance: none;
+  -webkit-font-smoothing: antialiased;
+  height: 200px;
+  resize: none;
+}
+
+.charsLeft {
+  padding: 10px 0px;
+}
+
+
+/* Submit */
+
+.button {
+  display: inline-block;
+  padding: 10px;
+  padding-left: 20px;
+  padding-right: 20px;
+  font-size: 24px;
+  font-weight: 400;
+  color: #FFF;
+  background-color: #ff5a60;
+  border: 2px solid #ff5a60;
+  border-radius: 28px;
+  outline: none;
+}
+
+.btn-disable {
+  background-color: #DDD !important;
+  border: 2px solid #DDD !important;
+  color: #FFF;
+}
+
+.button-container {
+  margin-top: 24px;
+}
+
+.action-button {
+  position: relative;
+  padding: 10px 60px;
+}
+
+.has-error {
+  border: 1px solid red !important;
+}
+
+.error-text {
+  color: red;
+}
+
+.image-modal {
+  width: 100%;
+  padding: 25px;
+}
+
+
+.iframe {
+  position: absolute;
+  left: 0px;
+  width: 100%;
+  z-index: -1;
+  top: 0px;
+  height: 100%;
+}
+
+
+.iframe .freebirdHeaderMast {
+
+
+}
+
+.iframe .freebirdFormviewerViewFormBanner {
+  height: 800px;
+}
+
+
+/* Media Queries */
+
+@media (max-width: 768px) {}
+
+@media (min-width: 768px) {}
+
+@media (min-width: 992px) {
+  .container--responsive {
+    width: 750px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .container--responsive {
+    width: 1080px;
+    padding-left: 24px;
+    padding-right: 24px;
+  }
+}

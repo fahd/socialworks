@@ -1,0 +1,6 @@
+{
+  "name": "i-h",
+  "version": "0.0.0",
+  "private": true,
+  "main": "./InitiativesHeader.js"
+}

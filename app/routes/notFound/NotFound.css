@@ -1,0 +1,103 @@
+@import '../../components/variables.css';
+@font-face {
+  font-family: 'Bebas-Bold';
+  src: url('/fonts/bebas-bold.otf');
+}
+
+@font-face {
+  font-family: 'Bebas-Regular';
+  src: url('/fonts/bebas-book.otf');
+}
+
+.page {
+  position: relative;
+  height: 100vh;
+  position: relative;
+  overflow: hidden;
+  z-index: 300;
+}
+
+.root {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+}
+
+.bg, .overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+}
+
+.bg {
+  background: url('https://dh136thgitkrt.cloudfront.net/jeuros.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  opacity: 0.7;
+}
+
+.overlay {
+  background: #FFF;
+  opacity: 0.9;
+}
+
+.notFoundTitle {
+  font-size: 7em !important;
+  margin: 0px;
+}
+
+.notFoundSubtitle {
+  font-size: 3em !important;
+  font-family: Bebas-Regular;
+}
+
+.button {
+  display: inline-block;
+  margin-top: 20px;
+  margin-right: 5px;
+  display: inline-block;
+  color: #333;
+  font-family: Bebas-Bold;
+  background: transparent !important;
+  text-align: center;
+  padding: 7px 40px;
+  font-size: 24px;
+  border: 1px solid #333;
+  font-weight: 400;
+  outline: 0;
+  transition: all .3s ease;
+}
+
+.button:hover, .button:active, .button:visited, .button:focus {
+  color: #333;
+  text-decoration: none !important;
+}
+
+.button:focus {
+  outline: 0;
+}
+
+.container {
+  margin: 0 auto;
+  padding: 0 0 40px;
+  text-align: center;
+}
+
+.logo {
+  filter: grayscale(100%);
+}
+
+.content {
+  vertical-align: middle;
+  display: table-cell;
+  float: none;
+  width: 100%;
+}
+
+.meta {
+  font-family: Bebas-Bold;
+}

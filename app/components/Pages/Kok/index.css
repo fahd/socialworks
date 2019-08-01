@@ -1,0 +1,938 @@
+@font-face {
+  font-family: 'Bebas-Bold';
+  src: url('/fonts/bebas-bold.otf');
+}
+
+@font-face {
+  font-family: 'Bebas-Regular';
+  src: url('/fonts/bebas-book.otf');
+}
+
+
+/* KOK */
+
+.quoteTitle {
+  font-size: 2.5em !important;
+  font-family: 'Bebas-Regular' !important;
+}
+
+.quoteTitleLarge {
+  font-size: 6em !important;
+}
+
+.quoteTitleAuthor {
+  font-size: 2em !important;
+  text-align: right;
+}
+
+.container {
+  position: relative;
+  overflow: hidden !important;
+  width: 100%;
+  height: 98vh;
+}
+
+.container:not(:first-child) {
+  z-index: 1500;
+}
+
+.containerTable {
+  display: table;
+  width: 100%;
+  height: 100%;
+  z-index: 100;
+}
+
+.programDescription {
+  height: 40vh;
+  padding: 40px;
+}
+
+.programListEvent {
+  top: 50%;
+  position: relative;
+  -webkit-transform: translateY(-50%);
+  -moz-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  -o-transform: translateY(-50%);
+  transform: translateY(-50%);
+}
+
+.overlay, .background {
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  top: 0;
+}
+
+.background {
+  position: fixed;
+  top: 0px;
+  left: 0px;
+  bottom: 0px;
+  right: 0px;
+  background: url('https://dh136thgitkrt.cloudfront.net/kok/cover.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+  opacity: 0.07;
+}
+
+.registerBackground {
+  position: absolute;
+  /*background-attachment: fixed;*/
+  top: 0px;
+  left: 0px;
+  bottom: 0px;
+  right: 0px;
+  background-image: url('https://dh136thgitkrt.cloudfront.net/kok/kok-chance-cover.jpg');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  opacity: 0.1;
+}
+
+.landrCover {
+  max-width: 100%;
+  margin: 20px auto;
+  border-radius: 5px;
+  box-shadow: 12px 15px 20px 0px rgba(46, 61, 73, 0.15);
+}
+
+.overlay {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  bottom: 0px;
+  right: 0px;
+  background: #ff6a6a;
+  opacity: 1;
+}
+
+.content {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  margin: 0 auto;
+  vertical-align: middle;
+  display: table-cell;
+  float: none;
+  /* max-width: 1080px; */
+  text-align: center;
+}
+
+.aboutContent, .programContent {
+  position: relative !important;
+  max-width: 1080px;
+}
+
+.eventCardContainer {
+  padding-left: 10px !important;
+  padding-right: 10px !important;
+}
+
+.eventContent {
+  display: block;
+  vertical-align: initial;
+  text-align: left;
+  position: relative;
+  max-width: 1300px;
+  overflow: hidden;
+}
+
+.partnershipsContent {
+  display: block;
+  vertical-align: initial;
+  text-align: center;
+  position: relative;
+  max-width: 1168px;
+}
+
+.programContent {
+  text-align: left !important;
+}
+
+.titleContainer, .aboutContainer, .landrContainer, .programInfoContainer, .eventsContainer, .partnershipsContainer {
+  /*width: 730px;*/
+  max-width: 100%;
+  margin: 0 auto;
+}
+
+.aboutContainer, .landrContainer, .partnershipsContainer, .registerContainer {
+  background: #fff;
+  height: initial !important;
+  padding: 180px 0px;
+}
+
+.landrContainer {
+  padding: 140px 0px;
+}
+
+.aboutContainer {
+  padding: 160px 0px;
+}
+
+.eventsContainer, .partnershipsContainer {}
+
+.partnershipsContainer {
+  background-color: #fcfcfc
+}
+
+.programInfoContainer {
+  padding: 100px 0px 0px;
+}
+
+.registerContainer {
+  padding: 100px 25px !important;
+}
+
+.eventsContainer {
+  transition: all 1s ease;
+  padding: 140px 0px;
+  background: #fff;
+}
+
+.partnershipsContainer {
+  background: #fcfcfc;
+  padding: 100px 0px;
+}
+
+.fullHeight {
+  height: 100% !important;
+}
+
+.trunHeight {
+  height: 800px !important;
+}
+
+.contentFade {}
+
+.contentFade:after {
+  content: "";
+  background: linear-gradient(hsla(0, 0%, 100%, 0), #fff);
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  height: 400px;
+  width: 100%;
+  z-index: 400;
+}
+
+.eventContent:after {}
+
+.registerContent, .quoteContent {
+  display: block;
+  position: relative;
+  visibility: initial;
+  text-align: left;
+}
+
+.quoteContent {
+  max-width: 1080px;
+}
+
+.aboutContainerTable, .programInfoContainerTable {
+  max-width: 760px;
+  margin: 0 auto;
+}
+
+.titleContainer {
+  background: #fff;
+  width: 100%;
+  height: 100%;
+}
+
+.programInfoContainer {
+  background: #fff;
+  height: initial !important;
+}
+
+.programInfoLeft {
+  background: url('https://dh136thgitkrt.cloudfront.net/kok/chance-and-child.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 90vh;
+}
+
+.programInfoRight {
+  background: #fff;
+  height: 90vh;
+}
+
+.meta {
+  font-family: Lato;
+  -webkit-font-smoothing: antialiased;
+  color: #333;
+}
+
+.button, .button:hover, .button:active, .button:focus, .button:visited {
+  margin-top: 20px;
+  text-decoration: none!important;
+  margin-right: 5px;
+  display: inline-block;
+  color: #fff;
+  background: linear-gradient(200deg, #38c2d4 30%, #00b1bb);
+  border-radius: 28px;
+  text-align: center;
+  padding: 12px 60px;
+  font-size: 19px;
+  font-weight: 400;
+  outline: 0;
+  transition: all .3s ease;
+}
+
+.mainButton,
+.mainButton:hover,
+.mainButton:active,
+.mainButton:focus,
+.mainButton:visited {
+  color: #ff6a6a !important;
+  border: none;
+  background: #fff;
+}
+
+.paypalButton,
+.paypalButton:hover,
+.paypalButton:active,
+.paypalButton:visited,
+.paypalButton:focus {
+  border: 1px solid #ff6a6a;
+  background: transparent;
+  color: #ff6a6a;
+  padding: 12px 40px;
+  font-size: 19px;
+}
+
+.paypalButton:hover {
+  background: #ff6a6a;
+  color: #fff;
+}
+
+.landrButtonImage {
+  max-width: 60px;
+  margin-left: 5px;
+}
+
+.button:hover, .button:active, .button:visited, .button:focus {
+  color: #fff;
+}
+
+.button:focus {
+  outline: 0;
+}
+
+.readMore {
+  color: #ff6a6a;
+  letter-spacing: -0.02em;
+  margin: 20px 0px;
+}
+
+.readMore {
+  cursor: pointer;
+}
+
+.row {
+  height: 100% !important;
+}
+
+.title, .landr {
+  font-weight: 300;
+  font-family: 'Bebas-Bold';
+  font-size: 9em;
+  letter-spacing: -0.02em;
+  color: #FFF;
+  margin-top: 0;
+  margin-bottom: 8px;
+  margin-bottom: -0.1em;
+  padding: 15px 0px;
+}
+
+.landr {
+  font-size: 19px;
+  letter-spacing: -0.02em;
+  font-weight: #333;
+  color: #ff6a6a;
+  text-transform: uppercase;
+  font-family: Lato;
+}
+
+.sectionTitle {
+  color: #ff6a6a !important;
+  font-family: Lato;
+  font-size: 36px;
+  font-weight: 300;
+}
+
+.sessionTitle {
+  /*font-weight: 300;
+  font-size: 36px;*/
+}
+
+.programList {
+  text-align: left;
+  max-width: 1080px;
+  margin: 0 auto;
+}
+
+.partnerTitle {
+  padding: 20px 0px;
+  margin-bottom: 40px;
+}
+
+.eventTitle {
+  text-align: left;
+}
+
+.programTitle {
+  text-align: left !important;
+}
+
+.fixed {
+  position: fixed;
+  top: 20%;
+  left: 0;
+}
+
+.titleImage {
+  /*margin: 0 auto;
+  background-size: cover;
+  background-repeat:no-repeat;
+  background-position: center;
+  height: 50%;
+  width: 75%;*/
+}
+
+.headerTitle, .headerSubtitle {
+  color: #FFF !important;
+  font-weight: 300;
+  font-family: 'Bebas-Regular';
+}
+
+.headerTitle {
+  font-size: 24px;
+}
+
+.headerSubtitle {
+  font-size: 20px;
+  margin: 0px !important;
+}
+
+.signupLandr {
+  font-weight: 400;
+  max-width: 600px;
+  margin: 20px auto;
+  font-size: 19px;
+  padding: 0px 20px;
+}
+
+.aboutSubtitle, .sessionSubtitle, .aboutLandrTitle {
+  color: #333;
+  font-size: 36px;
+  font-weight: 300;
+}
+
+.aboutLandrTitle {
+  font-size: 24px !important;
+}
+
+.sessionSubtitle {
+  text-align: left;
+}
+
+.aboutBio, .aboutLandrBio {
+  word-wrap: break-word;
+  font-size: 17px;
+  padding: 50px 0px 0px;
+  max-width: 500px;
+  margin: 0 auto;
+  font-weight: 300;
+}
+
+.aboutLandrBio {
+  padding: 0px 0px;
+}
+
+.landrBioImage {
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 300px;
+  background-position: center;
+  border-radius: 5px;
+  box-shadow: 12px 15px 20px 0px rgba(46, 61, 73, 0.15);
+}
+
+.colImage {
+  padding: 0px 25px;
+}
+
+.landrBio {
+  text-align: left !important;
+  font-family: Lato;
+  -webkit-font-smoothing: antialiased;
+  font-weight: 300;
+  font-size: 17px;
+}
+
+.table {
+  height: 300px;
+  display: table;
+}
+
+.tableCell {
+  display: table-cell;
+  vertical-align: middle;
+  height: 100%;
+}
+
+.programBio {
+  margin: 0 auto;
+  font-size: 19px;
+  font-weight: 300;
+  word-wrap: break-word;
+}
+
+.programBioLink, .programBioLink:active, .programBioLink:visited, .programBioLink:focus, .programBioLinkhover {
+  color: #ff6a6a !important;
+  text-decoration: underline;
+}
+
+.programPhone, .programPhone:hover, .programPhone:focus, .programPhone:visited, .programPhone:active {
+  text-decoration: underline;
+  color: #ff6a6a;
+}
+
+.programBioContainer {
+  margin: 20px 0px 25px;
+}
+
+.programBioHeader {
+  height: 150px;
+  position: relative;
+}
+
+.programBioHeaderBackground, .programBioHeaderOverlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+}
+
+.programBioHeaderBackground {
+  opacity: 1;
+  z-index: 100;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+
+.programBioHeaderOverlay {
+  opacity: 0.95;
+  z-index: 200;
+}
+
+.programInfoTitle {
+  font-size: 24px;
+  font-weight: 500;
+  margin-top: 0px;
+}
+
+.programListEventTitle {
+  font-size: 32px;
+  display: block;
+  font-weight: 300;
+}
+
+.programListEventDates {
+  color: #ff6a6a;
+}
+
+.programContainer {
+  margin: 0px auto 100px;
+}
+
+.programImage {
+  position: relative;
+}
+
+.programImageChanceContainer::after, .programImageDatesContainer::after {
+  content: '';
+  border-radius: 5px;
+  background-size: contain !important;
+  position: absolute;
+  box-shadow: 12px 15px 20px 0px rgba(46, 61, 73, 0.15);
+}
+
+.programImageChance {
+  left: 10px;
+  top: 0;
+  height: 300px;
+  /*padding: 10px;*/
+  box-shadow: 12px 15px 20px 0px rgba(46, 61, 73, 0.15);
+}
+
+.programImageChanceContainer::after {
+  background: url(https://dh136thgitkrt.cloudfront.net/kok/eventImages/kids.jpg) center center no-repeat;
+  top: 160px;
+  left: 0;
+  height: 235px;
+  width: 355px;
+}
+
+.programImageDates {
+  left: 50px;
+  top: 100px;
+  height: 100%;
+  width: 320px;
+  box-shadow: 12px 15px 20px 0px rgba(46, 61, 73, 0.15);
+}
+
+.programImageDatesContainer::after {
+  background: url(https://dh136thgitkrt.cloudfront.net/kok/eventImages/kokhappy.jpg) center center no-repeat;
+  top: 200px;
+  right: 20px;
+  height: 212px;
+  width: 280px;
+}
+
+.programContact {
+  margin-top: 200px !important;
+}
+
+.image {
+  border-radius: 5px;
+}
+
+.emptySpace {
+  margin: 48px 0px;
+}
+
+
+/*.programImageChanceContainer::before {
+  content: '';
+  border-radius: 5px;
+  background: url(https://d125fmws0bore1.cloudfront.net/assets/pages/homepage/thumb-competitive-skills-fg-70bbe3c96c7c56f654e96ee86887b77be3ffbbdb412f6727d542c38832c66632.jpg) center center no-repeat;
+  position: absolute;
+  top: 100px;
+  left: 0;
+  height: 250px;
+  z-index: 200;
+  width: 380px;
+  box-shadow: 12px 15px 20px 0px rgba(46, 61, 73, 0.15);
+}*/
+
+.programListEventDescription {
+  font-size: 19px;
+  font-weight: 300;
+}
+
+.subtitle {
+  color: #FFF !important;
+  margin-top: -30px;
+  font-weight: 300;
+  font-size: 36px;
+  font-family: 'Bebas-Regular';
+  margin-bottom: 0px;
+}
+
+.headerImage, .headerBottomImage {
+  margin: 0px 5px;
+}
+
+.headerTitleImage {
+  max-width: 75px;
+  margin-right: 5px;
+}
+
+.headerBottomImage {
+  max-width: 50px;
+}
+
+.landrImage {
+  max-width: 75px !important;
+  display: block;
+  margin: 0 auto;
+}
+
+.scroll, .readMore {
+  cursor: pointer;
+  width: 100%;
+  left: 0;
+  height: 60px;
+  margin-bottom: 10px;
+  display: inline-block;
+  text-align: center;
+  text-shadow: 0 1px 2px rgba(0, 0, 0, .1);
+}
+
+.scroll {
+  position: fixed;
+  bottom: 0;
+  color: #fff;
+  animation: bounce 0.8s alternate infinite ease-in-out;
+}
+
+.readMore {
+  color: #333;
+  text-transform: uppercase;
+}
+
+.partnerCardContainer {
+  overflow: hidden;
+  position: relative;
+  border-top-left-radius: 3px;
+  border-top-right-radius: 3px;
+  margin: 2px;
+}
+
+.cardContainer {
+  overflow: hidden;
+  position: relative;
+  box-shadow: 2px 4px 8px 0px rgba(46, 61, 73, 0.2);
+  margin: 10px 0px;
+}
+
+.card {
+  height: 250px;
+  padding: 10px 20px;
+  position: relative;
+}
+
+.partnerCard {
+  background-size: contain;
+  background-position: 50%;
+  text-align: center;
+  background-repeat: no-repeat;
+}
+
+.scroll:after, .readMore:after {
+  content: '';
+  position: relative;
+  display: block;
+  left: 49.45%;
+  transform: translateY(30%) rotate(45deg);
+  -webkit-transform: translateY(30%) rotate(45deg);
+}
+
+.scroll:after {
+  width: 15px;
+  height: 15px;
+  border: 2px solid #fff;
+  border-top: none;
+  border-left: none;
+}
+
+.readMore:after {
+  width: 10px;
+  height: 10px;
+  border: 2px solid #333;
+  border-top: none;
+  border-left: none;
+}
+
+@-webkit-keyframes bounce {
+  from {
+    transform: translateY(-5%)
+  }
+  to {
+    transform: translateY(-30%)
+  }
+}
+
+.registerTitle, .registerTitle:hover, .registerTitle:active, .registerTitle:focus, .registerTitle:visited {
+  text-align: left;
+  color: #FFF !important;
+}
+
+
+/* Media Queries*/
+
+@media only screen and (max-device-width: 768px) {
+  .mainTitle {
+    font-size: 3em !important;
+  }
+}
+@media only screen and (min-device-width: 768px) and (max-device-width: 992px) {
+  .mainTitle {
+    font-size: 6em !important;
+  }
+  .subtitle{
+    margin: 0px;
+    font-size: 48px;
+  }
+
+  .headerSubtitle {
+    font-size: 32px;
+  }
+}
+
+@media (max-width: 768px) {
+  .landrCover {
+    max-width: 90%;
+  }
+
+  .programContact {
+    margin-top: 0px !important;
+  }
+
+  .subtitle {
+    margin-top: 0px;
+  }
+
+  .paypalButton,
+  .paypalButton:hover,
+  .paypalButton:visited,
+  .paypalButton:focus
+   {
+    padding: 12px 20px;
+  }
+
+  .mainButton,
+  .mainButton:hover,
+  .mainButton:visited,
+  .mainButton:focus
+   {
+    padding: 10px 20px;
+    font-size: 19px;
+  }
+
+
+  .colImage {
+    padding: 0px 15px !important;
+  }
+  .emptySpace {
+    margin: 0px !important;
+  }
+  .landrBioContainer {
+    margin-top: 48px;
+  }
+
+  .headerBottomImage {
+    max-width: 40px;
+  }
+  .scroll:after {
+    left: 48%;
+  }
+  .programImageChance, .programImageDates {
+    box-shadow: none;
+  }
+  .programDescription:nth-child(2) {
+    height: 75vh;
+  }
+  .quoteTitleLarge {
+    font-size: 3em !important;
+  }
+  .quoteTitle, .quoteTitleAuthor {
+    font-size: 2em !important;
+  }
+  .programListEventDescription {
+    text-align: left;
+  }
+  .programListEventTitle:first-child {
+    margin: 0px 0px 30px;
+  }
+  .programInfoRight {
+    height: 100%;
+  }
+  .aboutSubtitle {
+    font-size: 24px;
+  }
+  .fixed {
+    top: 20%;
+  }
+
+  .headerSubtitle {
+    font-size: 22px;
+  }
+  .subtitle {
+    font-size: 23px;
+  }
+  .mainTitle {
+    font-size: 4em;
+  }
+  .programInfoLeft {
+    height: 70vh;
+  }
+  .programContent {
+    padding: 10px;
+  }
+  .eventContent {
+    padding: 20px;
+  }
+  .programImageChance {
+    left: 0px;
+    top: 0;
+    width: 100%;
+    height: 100%;
+  }
+  .programImageDates {
+    left: 0px;
+    top: 0;
+    width: 100%;
+  }
+  .programDescription:nth-child(1) {
+    background: #fcfcfc;
+  }
+  .programDescription {
+    text-align: center;
+  }
+  .image {
+    border-radius: 0px !important;
+  }
+  .programImageDatesContainer::after, .programImageChanceContainer::after {
+    content: none;
+  }
+}
+
+@media (min-width: 768px) {
+  .mainTitle {
+    font-size: 8em;
+  }
+  .programImageDatesContainer::after, .programImageChanceContainer::after {
+    content: none;
+  }
+  .programImageDates {
+    left: 0;
+    /*padding: 10px;*/
+    height: 100%;
+    width: 100%;
+  }
+  .programImageChance {
+    left: 0;
+    /*padding: 10px;*/
+    height: 100%;
+    width: 100%;
+  }
+}
+
+@media (min-width: 992px) {
+  .mainTitle {
+    font-size: 9em;
+  }
+  .programImageChance, .programImageDates {
+    padding: 0px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .mainTitle {
+    font-size: 9em;
+  }
+  .programImageChance {
+    left: 10px;
+    top: 0;
+    height: 340px;
+  }
+  .programImageDates {
+    left: 50px;
+    top: 100px;
+    height: 100%;
+    width: 370px;
+  }
+  .programImageDatesContainer::after, .programImageChanceContainer::after {
+    content: '';
+  }
+}

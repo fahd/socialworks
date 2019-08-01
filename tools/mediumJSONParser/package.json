@@ -1,0 +1,18 @@
+{
+  "name": "medium_node_lambda",
+  "version": "1.0.0",
+  "description": "Lambda function built on NodeJS for use with parsing user's latests posts with a custom AWS API gateway and returning a JSON object.",
+  "main": "index.js",
+  "dependencies": {
+    "firebase": "^4.1.3",
+    "lodash": "^4.17.4",
+    "moment": "^2.18.1",
+    "request": "^2.79.0"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "start": "node index.js"
+  },
+  "author": "",
+  "license": "ISC"
+}

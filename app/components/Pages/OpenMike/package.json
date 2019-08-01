@@ -1,0 +1,6 @@
+{
+  "name": "OpenMike",
+  "version": "0.0.0",
+  "private": true,
+  "main": "./OpenMike.js"
+}

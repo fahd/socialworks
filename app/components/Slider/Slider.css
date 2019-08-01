@@ -1,0 +1,63 @@
+.container {
+  height: 60vh;
+  position: relative;
+  overflow: hidden;
+  margin-top: 75px;
+}
+
+.background {
+  width: 100%;
+  height: 100%;
+}
+
+.content {
+  max-width: 1080px;
+  margin: 0 auto;
+  padding-top: 60px;
+  height: 100%;
+}
+
+.bg {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  bottom: 0px;
+  right: 0px;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-color: #ff9074;
+  opacity: 1;
+  z-index: 10;
+}
+
+.logoInspire {
+  background-image: url(https://dh136thgitkrt.cloudfront.net/sw-logo-inspire.jpg);
+}
+
+.logoDreams {
+  background-image: url(https://dh136thgitkrt.cloudfront.net/sw-logo-creativity);
+}
+
+.logoYou {
+  background-image: url(https://dh136thgitkrt.cloudfront.net/sw-logo-you);
+}
+
+@media (max-width: 768px) {
+  .logoInspire {
+     background-image: url(https://dh136thgitkrt.cloudfront.net/donate/donate-mobile-1.jpg);
+   }
+   .logoDreams {
+     background-image: url(https://dh136thgitkrt.cloudfront.net/donate/donate-mobile-2.jpg);
+   }
+   .logoYou {
+     background-image: url(https://dh136thgitkrt.cloudfront.net/donate/donate-mobile-3.jpg);
+   }
+   .container {
+     height: 60vh;
+   }
+}
+
+@media (max-width: 992px) {
+
+}

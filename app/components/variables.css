@@ -1,0 +1,609 @@
+:root {
+  /*
+   * Typography
+   * ======================================================================== */
+  --font-family-base: 'Segoe UI', 'HelveticaNeue-Light', sans-serif;
+  /*
+   * Layout
+   * ======================================================================== */
+  --max-content-width: 1000px;
+  /*
+   * Media queries breakpoints
+   * ======================================================================== */
+  --screen-xs-min: 480px;
+  /* Extra small screen / phone */
+  --screen-sm-min: 768px;
+  /* Small screen / tablet */
+  --screen-md-min: 992px;
+  /* Medium screen / desktop */
+  --screen-lg-min: 1200px;
+  /* Large screen / wide desktop */
+}
+
+:global @font-face {
+  font-family: 'Bebas-Bold';
+  src: url('/fonts/bebas-bold.otf');
+}
+
+:global @font-face {
+  font-family: 'Bebas-Regular';
+  src: url('/fonts/bebas-book.otf');
+}
+
+:global {
+  .bank {}
+  input, textarea {
+    -webkit-user-select: text !important;
+    -khtml-user-select: text !important;
+    -moz-user-select: text !important;
+    -ms-user-select: text !important;
+    user-select: text !important;
+  }
+  textarea:focus, input:focus {
+    outline: none;
+  }
+  @import 'slick-carousel/slick/slick.css';
+  @import 'slick-carousel/slick/slick-theme.css';
+  @import 'react-draft-wysiwyg/dist/react-draft-wysiwyg.css';
+  @import "react-toggle/style.css";
+  html {
+    background-color: #ff9074;
+  }
+  ul {
+    list-style: none !important;
+  }
+  button:focus {
+    outline: 0;
+  }
+  .btn.active.focus, .btn.active:focus, .btn.focus, .btn:active.focus, .btn:active:focus, .btn:focus {
+    outline: 0 !important;
+  }
+  .empty-space {
+    margin-top: 48px !important;
+    margin-bottom: 48px !important;
+  }
+  .empty-space-top {
+    margin-top: 48px !important;
+    ;
+  }
+  .empty-space-bottom {
+    margin-bottom: 48px !important;
+  }
+  .empty-space-bottom-6 {
+    margin-bottom: 96px !important;
+  }
+  .text-center {
+    text-align: center !important;
+  }
+  .container-hide {
+    visibility: hidden !important;
+  }
+  .container-table {
+    position: absolute;
+    display: table;
+    width: 100%;
+    height: 100%;
+    z-index: 100;
+  }
+  .pad-vertical {
+    padding: 100px 0px;
+  }
+  .eventCards .slick-prev, .eventCards .slick-next {
+    top: 42%;
+  }
+  .event-dropzone {
+    text-align: center;
+    height: 250px;
+    margin-top: 0px;
+    border-width: 2px;
+    border-color: rgb(221, 221, 221);
+    border-style: dashed;
+    border-radius: 5px;
+  }
+  .event-dropzone:hover {
+    border-color: #8ddaff;
+  }
+
+  
+  .event-img-uploaded {
+    max-width: 100%;
+  }
+  .event-img-vertical {
+    padding-top: 60px;
+  }
+  .event-editor {
+    height: 350px !important;
+    border: 1px solid #F1F1F1;
+    padding: 20px;
+    border-radius: 2px;
+    font-family: 'Helvetica';
+    font-size: 1.2em;
+    font-weight: 300;
+    -webkit-font-smoothing: antialiased;
+    overflow-y: hidden;
+  }
+  .event-toolbar {
+    width: 100%;
+  }
+  .event-wrapper {
+    .rdw-option-wrapper {
+      border: none;
+    }
+    .rdw-dropdown-selectedtext, .rdw-fontfamily-placeholder {
+      color: #000;
+      font-family: 'Helvetica Neue';
+    }
+    .rdw-dropdown-selectedtext:hover, .rdw-fontfamily-placeholder:hover {
+      text-decoration: none;
+    }
+  }
+  .fa-camera {
+    font-size: 2.5em;
+    color: rgb(255, 160, 122);
+  }
+  .geosuggest {
+    font-size: 1rem;
+    position: relative;
+    margin: 1em auto;
+    text-align: left;
+  }
+  .geosuggest__suggests {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    right: 0;
+    max-height: 25em;
+    padding: 0px;
+    margin-top: -1px;
+    background: #fff;
+    border: 1px solid #c7dce6;
+    border-top-width: 0;
+    overflow-x: hidden;
+    overflow-y: auto;
+    list-style: none;
+    z-index: 5;
+    font-family: 'Lato';
+    transition: max-height 0.2s, border 0.2s;
+    -webkit-transition: max-height 0.2s, border 0.2s;
+  }
+  .geosuggest__suggests .geosuggest__item--active {
+    background: #ffb95f;
+    color: #fff;
+  }
+  .geosuggest__suggests .geosuggest__item--active:hover {
+    background: #DDD;
+  }
+  .geosuggest__suggests--hidden {
+    max-height: 0;
+    overflow: hidden;
+    border-width: 0;
+  }
+  .geosuggest__input {
+    display: block;
+    width: 100%;
+    height: 20px;
+    margin-bottom: 10px;
+    color: #333;
+    border-radius: 4px;
+    transition: border-color .15s linear;
+    -webkit-appearance: none;
+    padding: 20px 15px;
+    border: 1px solid #c7dce6;
+    font-size: 1rem;
+    line-height: 1.4em;
+    -webkit-font-smoothing: antialiased;
+    font-family: "Helvetica Neue" !important;
+    font-weight: 300;
+  }
+  .geosuggest__item {
+    color: #333;
+    list-style: none;
+    font-weight: 300;
+    font-size: 1em;
+    padding: .5em .65em;
+    cursor: pointer;
+    -webkit-font-smoothing: antialiased;
+  }
+  .geosuggest__item:hover {
+    background-color: #F5F5F5;
+  }
+  .modal-header {
+    border: none !important;
+    padding: 10px !important;
+  }
+  .modal-header .close span {
+    font-size: 1.5em;
+  }
+  .modal-footer {
+    border: none !important;
+  }
+  .modal-backdrop.in {
+    opacity: 0.5;
+    background-color: rgba(0, 0, 0, 0.98);
+  }
+  .modal-header {}
+  .modal-content {
+    border: none !important;
+  }
+  .modal-content::after {
+    color: blue;
+    position: absolute;
+    top: 0;
+    background: linear-gradient(160deg, #ff776a 20%, #E91E63 80%);
+    left: 0;
+    right: 0;
+    height: 100%;
+    bottom: 0;
+  }
+  .modal.in .modal-dialog {
+    margin: 0 auto;
+  }
+  .modal {
+    top: 20%;
+  }
+  .slick-next::before, .slick-prev::before {
+    content: none;
+  }
+  .slick-prev {
+    z-index: 1000;
+  }
+  .slick-button {
+    display: none;
+  }
+  .home-slick {
+    z-index: 100;
+  }
+  .young-based-god, .young-based-jesus {
+    display: inline;
+    color: #fff;
+    word-wrap: break-word;
+    white-space: nowrap;
+  }
+  .young-based-god:hover {
+    outline: 0;
+    color: #ffb075;
+    text-decoration: none;
+  }
+  .young-based-jesus:hover {
+    outline: 0;
+    color: #fff;
+    text-decoration: none;
+  }
+  .Dropdown-root {
+    position: relative;
+    /*float: left;*/
+    /*width: 100%;*/
+    margin: 0 auto;
+    top: 10px;
+  }
+  .Dropdown-root {
+    position: relative;
+  }
+  .Dropdown-control {
+    position: relative;
+    overflow: hidden;
+    background-color: transparent;
+    box-shadow: 0 1px 3px 0px rgba(0, 0, 0, 0.08) !important;
+    border: 1px solid #DBDBDB !important;
+    border-radius: 2px;
+    box-sizing: border-box;
+    color: #333;
+    cursor: default;
+    outline: none;
+    padding: 10px 15px;
+    transition: all 200ms ease;
+  }
+  .is-open .Dropdown-arrow {
+    border-color: transparent transparent #333;
+    border-width: 0 5px 5px;
+  }
+  .Dropdown-menu {
+    background-color: white;
+    border: 1px solid #ccc;
+    box-shadow: 0 1px 0 rgba(0, 0, 0, 0.06);
+    box-sizing: border-box;
+    margin-top: -1px;
+    max-height: 250px;
+    overflow-y: auto;
+    position: absolute;
+    top: 100%;
+    width: 100%;
+    z-index: 1000;
+  }
+  .Dropdown-arrow {
+    border-color: #333 transparent transparent;
+    border-style: solid;
+    border-width: 5px 5px 0;
+    content: ' ';
+    display: block;
+    height: 0;
+    margin-top: -ceil(2.5);
+    position: absolute;
+    right: 10px;
+    top: 14px;
+    width: 0;
+  }
+  .Dropdown-option {
+    box-sizing: border-box;
+    color: rgba(51, 51, 51, 0.8);
+    cursor: pointer;
+    display: block;
+    padding: 10px 0px;
+    text-align: center;
+    font-size: 19px;
+  }
+  .Dropdown-option:hover {
+    background-color: #f5f5f5;
+  }
+  .Dropdown-placeholder {
+    font-family: 'Bebas-Regular';
+    font-weight: 400;
+    font-size: 2em;
+    text-align: center;
+    text-transform: uppercase;
+    color: #333;
+    /*color: #484848;*/
+    -webkit-font-smoothing: antialiased;
+  }
+  .react-tabs [role=tab][aria-selected=true] {
+    border-bottom: 2px solid #ff6a6a !important;
+  }
+  .react-tabs [role=tab]:focus {
+    box-shadow: none !important;
+    border: none !important;
+    outline: none !important;
+    border-bottom: 2px solid #ff9074 !important;
+  }
+  .react-tabs [role=tab]:focus:after {
+    content: none !important;
+  }
+  .fade-in {
+    animation-name: fadeInHeader;
+    animation-duration: 1s;
+    animation-fill-mode: both;
+  }
+  .slideUp {
+    -webkit-animation: slideUp 1s;
+    -moz-animation: slideUp 1s;
+    -o-animation: slideUp 1s;
+    animation: slideUp 1s;
+    opacity: 1;
+  }
+  /*
+ * react-circular-progressbar styles
+ *
+ * All of the styles in this file are optional and configurable!
+ */
+  .CircularProgressbar {
+    /*
+   * This fixes an issue where the CircularProgressbar svg has
+   * 0 width inside a "display: flex" container, and thus not visible.
+   *
+   * If you're not using "display: flex", you can remove this style.
+   */
+    width: 100%;
+  }
+  .CircularProgressbar .CircularProgressbar-path {
+    stroke: #3e98c7;
+    stroke-linecap: round;
+    transition: stroke-dashoffset 0.5s ease 0s;
+  }
+  .CircularProgressbar .CircularProgressbar-trail {
+    stroke: #d6d6d6;
+  }
+  .CircularProgressbar .CircularProgressbar-text {
+    fill: #3e98c7;
+    font-size: 20px;
+    dominant-baseline: middle;
+    text-anchor: middle;
+  }
+  @media (max-width: 768px) {
+    .slick-slider {
+      overflow: hidden;
+    }
+    .slick-button {
+      display: none !important;
+    }
+    .hide-sm {
+      display: none !important;
+    }
+    .Dropdown-placeholder {
+      font-size: 1.5em;
+    }
+    .Dropdown-root {
+      width: 95%;
+    }
+  }
+  @media (max-width: 1200px) and (min-width: 768px) {
+    .hide-md {
+      display: none !important;
+    }
+  }
+  @media (min-width: 1200px) {
+    .hide-lg {
+      display: none !important;
+    }
+  }
+}
+
+:global .fadeIn {
+  webkit-animation: fadeIn 1s;
+  /* Safari, Chrome and Opera > 12.1 */
+  -moz-animation: fadeIn 1s;
+  /* Firefox < 16 */
+  -ms-animation: fadeIn 1s;
+  /* Internet Explorer */
+  -o-animation: fadeIn 1s;
+  /* Opera < 12.1 */
+  animation: fadeIn 1s;
+  opacity: 1;
+  visibility: visible !important;
+}
+
+@keyframes :global(moveIt) {
+  0% {
+    background-position: bottom;
+    background-size: 150%
+  }
+  25% {
+    background-size: 200%
+  }
+  50% {
+    background-position: 50%;
+    background-size: 225%
+  }
+  to {
+    background-position: top;
+    background-size: 250%
+  }
+}
+
+:global .scrollyBitch {
+  -webkit-animation: moveIt 30s linear infinite;
+  animation: moveIt 30s linear infinite;
+  -webkit-animation-direction: alternate;
+  animation-direction: alternate;
+}
+
+@keyframes :global(fadeIn) {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes :global(slideUp) {
+  0% {
+    opacity: 0;
+    -webkit-transform: translateY(100px);
+    -moz-transform: translateY(100px);
+    -o-transform: translateY(100px);
+    transform: translateY(100px)
+  }
+  100% {
+    opacity: 1;
+    -webkit-transform: translateY(0);
+    -moz-transform: translateY(0);
+    -o-transform: translateY(0);
+    transform: translateY(0)
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes :global(wiggle) {
+  0%, 7% {
+    transform: rotateZ(0);
+  }
+  15% {
+    transform: rotateZ(-15deg);
+  }
+  20% {
+    transform: rotateZ(10deg);
+  }
+  25% {
+    transform: rotateZ(-10deg);
+  }
+  30% {
+    transform: rotateZ(6deg);
+  }
+  35% {
+    transform: rotateZ(-4deg);
+  }
+  40%, 100% {
+    transform: rotateZ(0);
+  }
+}
+
+:global .wiggle {
+  animation: wiggle 2s linear infinite;
+}
+
+@keyframes :global(fadeInHeader) {
+  0% {
+    opacity: 0;
+    transform: translateY(-20px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes :global(fade-out) {
+  0%, 100%, 23% {
+    opacity: 1
+  }
+  33%, 90% {
+    opacity: 0
+  }
+}
+
+@keyframes :global(fade-out2) {
+  0%, 56% {
+    opacity: 1
+  }
+  100%, 66% {
+    opacity: 0
+  }
+}
+
+@keyframes :global(fade-out3) {
+  0%, 90% {
+    opacity: 1
+  }
+  100% {
+    opacity: 0
+  }
+}
+
+
+/* Firefox < 16 */
+
+@-moz-keyframes :global(fadeIn) {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+
+/* Safari, Chrome and Opera > 12.1 */
+
+@-webkit-keyframes :global(fadeIn) {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+
+/* Internet Explorer */
+
+@-ms-keyframes :global(fadeIn) {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+
+/* Opera < 12.1 */
+
+@-o-keyframes :global(fadeIn) {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}

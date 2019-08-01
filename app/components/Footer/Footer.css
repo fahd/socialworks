@@ -1,0 +1,185 @@
+.footer {
+  position: relative;
+  background: #313038;
+  padding-top: 48px;
+  padding-bottom: 48px;
+  z-index: 500;
+}
+
+.footer-banner{
+  background: #313038;
+  text-align: center;
+  min-width: 50%;
+}
+
+.footer-social, .footer-banner{
+  position:relative;
+}
+
+.messengerIcon {
+  height: 17px;
+  display: inline-block;
+
+}
+
+.messageUs {
+  display: inline-block;
+}
+.footer-separator hr {
+  margin-top: 48px;
+  margin-bottom: 24px;
+}
+.footer-photo{
+  max-width: 100%;
+  opacity: 1;
+}
+
+
+.row-meta{
+  margin-left: 5px;
+  margin-right: 5px;
+}
+
+.footer-icon{
+  width: 100px;
+}
+
+.label{
+  display: block;
+  padding: 0;
+  margin-bottom: 5px;
+  font-size: 16px;
+  font-weight: 700;
+  word-wrap: break-word;
+  white-space: nowrap;
+  color: #FFF;
+}
+
+.meta {
+  font-family: Lato;
+  -webkit-font-smoothing: antialiased;
+}
+
+.links-list{
+  list-style: none;
+  margin-bottom: 0;
+  margin-top:0;
+  padding-left: 0;
+}
+
+.links-list li span{
+  padding: 10px 0px;
+}
+.links-list li a,
+.links-list li span{
+  display: block;
+  color: #FFF;
+  font-weight: 300;
+  text-decoration: none;
+  word-wrap: break-word;
+white-space: nowrap;
+}
+
+.links-list li a:hover{
+  outline: 0;
+  color: #ffb075;
+}
+
+.links-list li{
+  padding:0;
+}
+
+.footer-label{
+  color: #fff;
+  font-weight: 300;
+  width: 50%;
+  float: left;
+  text-align: left;
+}
+
+.copyrightIcon {
+  width: 20px;
+}
+
+.footerLine {
+  border-top: 1px solid #494752;
+}
+
+.footerSocial {
+  float: right;
+}
+
+.footerSocialLink {
+  display: inline-block;
+  padding: 0px 10px 0px 0px !important;
+  a,
+  a:hover,
+  a:visited,
+  a:focus {
+    font-size: 24px;
+    color: #fff;
+    text-decoration: none;
+  }
+}
+
+.siteMap {
+  vertical-align: middle;
+    display: table;
+    color: #FFF;
+    font-weight: 300;
+    text-decoration: none;
+    word-wrap: break-word;
+    white-space: nowrap;
+    font-family: Lato;
+    font-size: 14px !important;
+}
+
+
+
+@media (max-width: 767px) {
+  .footer {
+    text-align: center;
+  }
+
+  .footerSocial {
+    float: left;
+  }
+
+  .footer-column {
+    margin: 18px 0px;
+  }
+
+  .footer-icon {
+    width: 100px;
+  }
+
+  .credit-bottom {
+    display: block !important;
+  }
+
+  .credit-top {
+    display: none !important;
+  }
+  .footer-label {
+    width: 100%;
+    text-align: left;
+  }
+}
+
+@media (min-width: 768px) {
+  .credit-top {
+    display: block !important;
+  }
+
+  .credit-bottom {
+    display: none !important;
+  }
+}
+
+@media (min-width: 992px) {
+  .footer-banner {
+
+  }
+}
+
+@media (min-width: 1200px) {}

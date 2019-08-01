@@ -1,0 +1,6 @@
+{
+  "name": "ParadeToThePolls",
+  "version": "0.0.0",
+  "private": true,
+  "main": "./Parade.js"
+}

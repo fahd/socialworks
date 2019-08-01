@@ -1,0 +1,633 @@
+.ww-title {
+  color: #333;
+  font-weight: 700;
+  font-size: 8em;
+  margin: 0px auto;
+  font-family: 'Lato' !important;
+  /*text-shadow: 0px 1px 2px rgba(0,0,0,1.74);*/
+}
+
+.empty-space {
+  margin: 64px 0px;
+}
+
+.stats-color {
+  text-shadow: 0px 2px 2px rgba(0,0,0,0.32);
+}
+
+
+.brands{
+  max-width: 700px;
+  margin: 80px auto 140px;
+
+}
+
+
+.col-brand-button {
+  /*padding: 0px 20px;*/
+}
+
+
+.header-row {
+  z-index: 500;
+}
+
+
+.acc-cover {
+  position: relative;
+  height: 700px;
+  overflow: hidden;
+  z-index: 100;
+}
+
+.invest-text {
+  padding-left: 0px !important;
+  margin-bottom: 30px;
+}
+
+.acc-cover-leader{
+  height: 400px;
+  background-color: #fff;
+}
+
+.acc-leader {
+  position: absolute;
+  top: -100%;
+  left: 0px;
+  bottom: 0px;
+  right: 0px;
+  background: url(https://dh136thgitkrt.cloudfront.net/cps_coverphoto.jpg);
+  background-size: cover;
+  background-position: top center;
+  background-repeat: no-repeat !important;
+  opacity: 1;
+}
+
+
+
+/*Old Styles*/
+
+.main-header {
+  position: relative;
+  overflow: hidden;
+  min-height: 95vh;
+}
+
+.bg, .overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+}
+
+/*.bg {
+  background-image: url('https://dh136thgitkrt.cloudfront.net/smartkids.jpg');
+  opacity: 1;
+  background-repeat: no-repeat;
+  background-size: cover;
+}*/
+
+/*.overlay {
+  background: #333;
+  opacity: 0.6;
+}*/
+
+.header {
+  position: relative;
+  overflow: hidden;
+  white-space: normal;
+  min-height: 500px;
+  margin-top: -15px;
+  background: #fff;
+}
+
+.cps-cover {
+  max-width: 100%;
+  position: relative;
+  min-height: 600px;
+}
+
+.cps-cover-bg {
+  position: absolute;
+  background-size: cover;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-position: center;
+  z-index: 200;
+  opacity: 0.9;
+  background-image: url(https://dh136thgitkrt.cloudfront.net/cps_coverphoto.jpg);
+}
+
+.cps-cover-overlay {
+  position: absolute;
+  background-size: cover;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-position: center;
+  z-index: 300;
+  background-color: #333;
+  opacity: 0.7;
+}
+
+.outcome {
+  color: #333 !important;
+}
+
+.outcome-subtitle {
+  color: #666 !important;
+  font-size: 14px;
+  font-weight: 300;
+  max-width: 750px;
+  margin: 30px auto;
+  font-family: 'Lato';
+  font-weight: 300 !important;
+  line-height: 17px;
+  text-align: left;
+}
+
+.dropdown {
+  margin: 30px auto;
+}
+
+.warning {
+  color: #333 !important;
+  text-align: center;
+}
+
+.button-container {
+  margin: 24px 5px;
+}
+
+.action-button {
+  padding: 10px 30px;
+}
+
+.button,
+.button:visited {
+  display: inline-block;
+  padding: 10px;
+  padding-left: 20px;
+  padding-right: 20px;
+  font-size: 23px;
+  font-family: Lato;
+  -webkit-font-smoothing: antialiased;
+  font-weight: 400;
+  letter-spacing: -1px;
+  color: #fff;
+  background-color: #ff6a6a;
+  border: 2px solid #FF6a6a;
+  border-radius: 28px;
+  transition: all .3s;
+  outline:none;
+  box-shadow: 2px 4px 8px 0px rgba(46, 61, 73, 0.2);
+}
+
+.button:hover,
+.button:focus{
+  text-decoration: none;
+}
+
+.cps-button {
+  background-color: #6ab1ff !important;
+  border: 1px solid #6ab1ff !important;
+}
+
+.contact-info {
+  margin: 0px 5px;
+  color: #6ab1ff !important;
+  font-weight: 500;
+}
+.contact-info:hover,
+.contact-info:active,
+.contact-info:focus{
+  text-decoration: none !important;
+}
+
+.invest-subtitle {
+  font-size: 20px;
+  font-weight: 300;
+  line-height: 27px;
+  color: #666;
+}
+
+.invest-subtitle {
+  font-family: 'Lato';
+}
+
+
+
+.tweet-link {
+  margin-top: 40px;
+  margin-bottom: 20px;
+  display: inline-block;
+  width: auto;
+  height: auto;
+  background-color: #fc7473;
+  color: #fff;
+  font-weight: 400;
+  font-size: 17px;
+  border-radius: 300px;
+  padding: 10px 60px;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, .12), 0 1px 2px rgba(0, 0, 0, .24);
+  -webkit-transition: .1s all linear;
+  -moz-transition: .1s all linear;
+  -o-transition: .1s all linear;
+  transition: .1s all linear;
+}
+
+.tweet-link:hover, .tweet-link:active, .tweet-link:focus, .tweet-link:visited {
+  text-decoration: none !important;
+  color: #fff;
+}
+
+.header-photo {
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  background: transparent;
+  background-attachment: fixed;
+  background: url(https://dh136thgitkrt.cloudfront.net/warmestwinter/warmest-winter.jpeg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  opacity: 1;
+}
+/*
+.header-container {
+  margin-top: 50px;
+}*/
+
+.header-overlay, .about-header-overlay, .numbers-overlay, .numbers-bg, .empwr-overlay {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  opacity: 0.95;
+}
+
+.header-overlay {
+  background: linear-gradient(120deg, #ff776a 20%, #E91E63 80%);
+}
+
+.meta {
+  -webkit-font-smoothing: antialiased;
+  font-weight: 300;
+
+}
+
+
+
+.text-title {
+  font-weight: 300;
+  font-size: 48px;
+  margin: 20px auto;
+  /*letter-spacing: -0.02em;*/
+}
+
+.text-subtitle {
+  font-weight: 300;
+  font-size: 24px;
+  margin: 20px 0px;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.fade-in {
+  animation-name: fadeInHeader;
+  animation-duration: 1s;
+  animation-fill-mode: both;
+}
+
+
+/* Card Container */
+
+
+/*.news-item {
+  padding-left: 7px;
+  padding-right: 7px;
+}*/
+
+.news-link:hover, .news-link:active, .news-link:visited, .news-link:focus {
+  text-decoration: none !important;
+}
+
+.card-container {
+  overflow: hidden;
+  position: relative;
+  box-shadow: 0px 3px 4px rgba(0, 0, 0, .1), 0px 0 2px rgba(0, 0, 0, .1);
+  border-top-left-radius: 3px;
+  border-top-right-radius: 3px;
+  transition: transform .24s, box-shadow .24s;
+}
+
+.card-container:hover {
+  box-shadow: 12px 15px 20px 4px rgba(46, 61, 73, 0.15);
+}
+
+.card-image {
+  top: 0px;
+  bottom: 0px;
+  left: 0px;
+  right: 0px;
+  position: absolute;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  height: 100%;
+  width: 100%;
+}
+
+.card-fader {
+  background-image: url(https://dh136thgitkrt.cloudfront.net/openmike/openmike-newscard-1.jpg);
+}
+
+.card-image-container {
+  position: relative;
+  width: 100%;
+  z-index: 0;
+}
+
+.card-text {
+  border-radius: 2px;
+  position: relative;
+  padding: 10px 20px;
+  height: 10em;
+  background-color: #fcfcfc;
+}
+
+.card-text-content {
+  font-family: Lato;
+  position: relative;
+  -webkit-font-smoothing: antialiased;
+}
+
+.card-meta {
+  display: inline-block;
+  padding-bottom: 10px;
+}
+
+.card-icon {
+  width: 40px;
+  height: 40px;
+  border-radius: 2px;
+  background-color: red;
+  display: inline-block;
+  vertical-align: middle;
+  background-size: contain;
+}
+
+.icon-fader {
+  background-image: url(https://dh136thgitkrt.cloudfront.net/openmike/fader-icon.png)
+}
+
+.card-brand {
+  display: inline-block;
+  vertical-align: middle;
+  color: #333 !important;
+  text-decoration: none !important;
+  padding: 10px;
+  font-size: 16px;
+}
+
+.card-text-title {
+  color: #333;
+  font-size: 24px;
+  margin-top: 15px;
+  margin-bottom: 5px;
+  font-weight: 300;
+  line-height: 24px;
+  text-align: left;
+}
+
+.parade-title-content {
+  vertical-align: middle;
+  display: block;
+  color: #333 !important;
+  padding: 0px 15px;
+}
+
+/* overlay text*/
+
+.container {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+}
+.header-container {
+  position: relative;
+  text-align: left;
+
+  height: 100%;
+}
+
+.meta {
+  font-family: Lato;
+  -webkit-font-smoothing: antialiased;
+  color: #333;
+}
+
+.title {
+  font-weight: 300;
+  font-size: 96px;
+  letter-spacing: -0.07em;
+  text-align: center;
+  margin-top: 0;
+  margin-bottom: 8px;
+  margin-bottom: -0.1em;
+}
+
+.volunteer-title {
+  font-size: 96px !important;
+  font-weight: 500 !important;
+}
+
+
+
+.header-content {
+  vertical-align: middle;
+  display: table-cell;
+  text-align: left;
+  float: none;
+  width: 100%;
+}
+
+.header-text {
+  padding: 20px;
+}
+
+
+.meta {
+  font-family: Lato;
+  -webkit-font-smoothing: antialiased;
+  color: #333;
+}
+
+.meta-light {
+  font-family: Lato;
+  -webkit-font-smoothing: antialiased;
+  color: #FFF;
+}
+.title {
+  font-size: 64px;
+  font-weight: 300;
+  margin-top: 10px;
+  margin-bottom: 10px;
+
+}
+
+.subtitle {
+  font-size: 36px;
+  font-weight: 300;
+
+}
+
+/*Volunteer Section*/
+
+
+
+
+
+/* end overlay text*/
+
+
+@keyframes fadeInHeader {
+  0% {
+    opacity: 0;
+    transform: translateY(-20px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.slideUp{
+  -webkit-animation: slideUp 1s;
+  -moz-animation: slideUp 1s;
+  -o-animation: slideUp 1s;
+  animation: slideUp 1s;
+  opacity: 1;
+}
+
+@keyframes slideUp {
+    0% {
+        opacity: 0;
+        -webkit-transform: translateY(100px);
+        -moz-transform: translateY(100px);
+        -o-transform: translateY(100px);
+        transform: translateY(100px)
+    }
+    100% {
+        opacity: 1;
+        -webkit-transform: translateY(0);
+        -moz-transform: translateY(0);
+        -o-transform: translateY(0);
+        transform: translateY(0)
+    }
+    100%{
+      opacity: 1;
+    }
+}
+
+.empty-space-bottom {
+  margin-bottom: 48px;
+}
+
+@media (max-width: 768px) {
+
+  .cps-cover {
+    min-height: 300px;
+  }
+
+  .title {
+    font-size: 36px;
+  }
+  .volunteer-title {
+    font-size: 48px !important;
+  }
+
+  .subtitle {
+    font-size: 24px !important;
+  }
+
+  .acc-cover-leader{
+    height: 400px;
+  }
+
+  .text-subtitle {
+    font-size: 19px;
+  }
+
+  .ww-title {
+    font-size: 4em;
+  }
+  .ww-subtitle {
+    font-size: 24px;
+  }
+
+  .invest-subtitle {
+    margin: 0px;
+    font-size: 19px;
+    padding-left: 15px;
+    line-height: 24px;
+  }
+
+  .text-title {
+    font-size: 36px !important;
+    margin: 0px !important;
+  }
+}
+
+@media (min-width: 768px) {
+  .ww-title {
+    font-size: 7em;
+  }
+
+
+}
+
+@media (max-width: 992px) {
+
+  .text-title {
+    font-size: 48px;
+  }
+  .col-brand-button {
+    margin: 40px 0px;
+    padding: 0px;
+  }
+}
+
+@media (min-width: 992px) {}
+
+@media (min-width: 1200px) {
+  .ww-title {
+    font-size: 5em;
+  }
+}
+
+@media only screen and (max-device-width: 768px) {
+  /*.header-container {
+    padding-top: 40px;
+  }*/
+  .ww-title {
+    font-size: 3em;
+  }
+
+  .volunteer-title {
+    font-size: 48px !important;
+  }
+  .header-row {
+    position: relative !important;
+    margin-left: 0px !important;
+  }
+}

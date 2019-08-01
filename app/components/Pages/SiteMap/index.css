@@ -1,0 +1,247 @@
+.container {
+  position: relative;
+  overflow: hidden;
+  z-index: 100;
+  height: 85vh;
+}
+
+.sitemapLinks {
+  text-align: left;
+  text-decoration: none;
+}
+
+.siteMapLink {
+  color: #333;
+  font-family: Helvetica Neue;
+  font-size: 19px;
+  font-weight: 400;
+  -webkit-font-smoothing: antialiased;
+}
+.siteMapLinkSub {
+  color: #333;
+  font-family: Helvetica Neue;
+  font-size: 14px;
+}
+
+.siteMapLinkSub:hover,
+.siteMapLinkSub:active,
+.siteMapLinkSub:visited,
+.siteMapLinkSub:focus,
+.siteMapLink:hover,
+.siteMapLink:active,
+.siteMapLink:visited,
+.siteMapLink:focus {
+  color: #333 !important;
+}
+
+
+
+
+.siteMapLinkSubContainer {
+  padding-left: 10px;
+  border-left: 1px solid #666;
+}
+
+.container--responsive {
+  position: relative;
+  z-index: 300;
+  margin: auto;
+  margin-top: 75px;
+}
+
+.content {
+  max-width: 1080px;
+  margin: 0 auto;
+  padding-top: 30px;
+  margin-top: 20px;
+  height: 100%;
+  width: 100%;
+  max-width: 1080px;
+  padding-left: 50px;
+  padding-right: 50px;
+  text-align: center;
+}
+
+.content-meta {
+  width: 730px;
+  max-width: 100%;
+  margin: 0 auto;
+}
+
+.meta {
+  font-family: Lato;
+  -webkit-font-smoothing: antialiased;
+  color: #333;
+}
+
+.volunteer-title {
+  font-size: 72px !important;
+}
+
+.header-description {
+  line-height: 1.5;
+  text-align: center;
+  margin-top: 15px;
+}
+
+.header-subtitle {
+  color: #666 !important;
+  font-size: 19px;
+  font-weight: 300;
+}
+
+.button, .button:hover, .button:visited, .button:focus {
+  display: inline-block;
+  padding: 3px 20px;
+  margin-top: 20px;
+  font-size: 20px;
+  font-weight: 400;
+  color: #ff6a6a;
+  border: 2px solid #ff6a6a;
+  border-radius: 28px;
+  transition: all .3s;
+  text-decoration: none;
+}
+
+.fa {
+  margin-left: 5px;
+  font-size: 1.1em;
+}
+
+.about-image {
+  background-image: url(https://dh136thgitkrt.cloudfront.net/chanumero-uno.jpg);
+  /*background-image: url(https://consequenceofsound.files.wordpress.com/2016/09/chance-aahh.jpg?quality=80);*/
+  /*background-image: url(https://dh136thgitkrt.cloudfront.net/about-cover-mcd.jpg);*/
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: right;
+  width: 100%;
+  margin: 0 auto;
+  height: 650px;
+}
+
+.bg, .overlay {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  bottom: 0px;
+  right: 0px;
+}
+
+.bg {
+  background: url(https://dh136thgitkrt.cloudfront.net/volunteer/volunteer-cover.jpg);
+  background-size: cover;
+  background-position: top center;
+  background-repeat: no-repeat;
+  opacity: 1;
+}
+
+.overlay {
+  background: #232323;
+  z-index: 51;
+  opacity: .7;
+}
+
+.header-container {
+  position: relative;
+  height: 100%;
+}
+
+.header-content {
+  vertical-align: middle;
+  display: table-cell;
+  text-align: left;
+  float: none;
+  width: 100%;
+}
+
+.header-text {
+  padding: 20px;
+}
+
+.meta {
+  font-family: Lato;
+  -webkit-font-smoothing: antialiased;
+  color: #333;
+}
+
+.meta-light {
+  font-family: Lato;
+  -webkit-font-smoothing: antialiased;
+  color: #FFF;
+}
+
+.title {
+  font-weight: 300;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  font-weight: 300;
+  font-size: 48px;
+  font-family: 'Helvetica Neue';
+  letter-spacing: -0.02em;
+  text-align: center;
+}
+
+.subtitle {
+  font-size: 36px;
+  font-weight: 300;
+}
+
+
+/*Volunteer Section*/
+
+
+/* Media Queries */
+
+@media (max-width: 768px) {
+  .title {
+    font-size: 36px;
+  }
+  .bg {
+    top: 0;
+  }
+  .volunteer-title {
+    font-size: 48px !important;
+  }
+  .about-image {
+    height: 300px;
+  }
+  .content {
+    padding: 20px;
+  }
+  .subtitle {
+    font-size: 24px !important;
+  }
+}
+
+@media (min-width: 768px) {}
+
+@media (min-width: 992px) {
+  .container--responsive {
+    width: 750px;
+  }
+  .about-image {
+    height: 400px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .container--responsive {
+    width: 1080px;
+    padding-left: 24px;
+    padding-right: 24px;
+  }
+  .about-image {
+    height: 600px;
+  }
+}
+
+@media only screen and (max-device-width: 768px) {
+  .volunteer-title {
+    font-size: 48px !important;
+  }
+  .header-row {
+    position: relative !important;
+    margin-left: 0px !important;
+  }
+}

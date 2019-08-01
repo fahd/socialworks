@@ -1,0 +1,6 @@
+{
+  "name": "i-om",
+  "version": "0.0.0",
+  "private": true,
+  "main": "./InitiativesOpenMike.js"
+}

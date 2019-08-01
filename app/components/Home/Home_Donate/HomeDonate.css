@@ -1,0 +1,254 @@
+@import '../../proxima-nova.css';
+.text-title {
+  font-size: 36px;
+  margin-bottom: 8px;
+  font-weight: 300;
+  letter-spacing: -0.02em;
+  /*text-shadow: 0px 1px 2px rgba(0,0,0,0.62);*/
+}
+
+.text-subtitle {
+  font-size: 19px;
+  font-weight: 300;
+}
+
+.donate-left-text {
+  text-align: left !important;
+}
+
+.donate-container {
+  position: relative;
+  overflow: hidden;
+  z-index: 100;
+  height: 600px;
+  font-family: Lato;
+}
+
+.donate-text-container {}
+
+.donate-overlay {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  bottom: 0px;
+  right: 0px;
+  background: linear-gradient(160deg, #ff776a 20%, #E91E63 80%);
+  opacity: 0.99;
+}
+
+.donate-bg {
+  position: absolute;
+  top: -25%;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  opacity: 0.05;
+  background: url(https://dh136thgitkrt.cloudfront.net/openmike/stats-cover.JPG);
+}
+
+.donate-content {
+  vertical-align: middle;
+  display: table-cell;
+  text-align: left;
+  float: none;
+  width: 100%;
+}
+
+.donate-left {
+  background: #FFF;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 30px;
+  height: 300px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, .3);
+}
+
+.donate-right {
+  background: #FFF !important;
+}
+
+.donate-text {
+  /*height: 300px;*/
+}
+
+.meta {
+  font-family: "Lato";
+  color: #333;
+  -webkit-font-smoothing: antialiased;
+}
+
+.button, .button:visited {
+  display: inline-block;
+  font-family: Lato;
+  -webkit-font-smoothing: antialiased;
+  padding: 10px 20px 10px;
+  font-size: 22px;
+  font-weight: 400;
+  color: #FFF;
+  background-color: #ff6a6a;
+  border: none;
+  border-radius: 28px;
+  transition: all .3s;
+  outline: none;
+}
+
+.slick {
+  overflow: hidden;
+}
+
+.button:hover, .button:focus {
+  text-decoration: none;
+}
+
+.button-container {
+  margin: 24px 0px;
+  width: 100%;
+}
+
+.action-button {
+  width: 100%;
+}
+
+.fa {
+  margin-left: 5px;
+  font-size: 1.1em;
+}
+
+.donate-right {
+  height: 300px;
+  padding: 0px;
+  margin: 0px;
+}
+
+.donate-slider {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  position: relative;
+  width: 100%;
+  height: 100%
+}
+
+.donate-slider li {
+  position: absolute;
+  top: 0;
+  background: url(https://dh136thgitkrt.cloudfront.net/sw-logo-inspire.jpg) center no-repeat;
+  background-size: cover;
+  animation: fade-out 9s infinite both
+}
+
+.slider li {
+  width: 100%;
+  height: 100%;
+  top: 0;
+  opacity: 0;
+}
+
+.donate-slider li:nth-child(2) {
+  background-image: url(https://dh136thgitkrt.cloudfront.net/sw-logo-you.jpeg);
+  animation-delay: 3s
+}
+
+.donate-slider li:nth-child(3) {
+  background-image: url(https://dh136thgitkrt.cloudfront.net/sw-logo-creativity.jpeg);
+  animation-delay: 6s
+}
+
+@keyframes fade-out {
+  0%, 100%, 22% {
+    opacity: 1
+  }
+  33%, 88% {
+    opacity: 0
+  }
+}
+
+/* New Card Styling */
+
+.donate-info{
+  display: flex;
+  height: 100%;
+}
+
+.donate-content {
+  max-width: 1080px;
+  margin: 0 auto;
+  align-self: center;
+  width: 80%;
+}
+
+
+/* End Card Styling*/
+
+@media (max-width: 768px) {
+  .donate-title {
+    font-size: 36px !important;
+  }
+  .donate-container {
+    height: 400px;
+    width: 100%;
+  }
+  .donate-left {
+    margin: 20px !important;
+    float: none;
+    height: 100%;
+  }
+
+  .donate-left-text {
+    text-align: center !important;
+  }
+  .action-button {
+    width: 80% !important;
+  }
+}
+@media (max-width: 992px) {
+  .button-container {
+    padding: 0;
+  }
+
+
+  .action-button {
+    width: 60%;
+  }
+}
+
+@media (min-width: 768px) {
+  .donate-right {
+    display: none;
+  }
+
+  .donate-left-text {
+    text-align: center !important;
+  }
+
+  .text-title {
+    font-size: 36px;
+  }
+
+
+}
+
+@media (min-width: 992px) {
+  .donate-left-text {
+    text-align: left !important;
+  }
+
+  .donate-left {
+    margin: 0px;
+  }
+
+  .donate-right {
+    display: block;
+  }
+  .text-title {
+    font-size: 32px;
+
+  }
+}
+
+@media (min-width: 1200px) {}
+
+@media only screen and (max-device-width: 768px) {
+
+}

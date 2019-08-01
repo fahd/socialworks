@@ -1,0 +1,6 @@
+{
+  "name": "BannerSlider",
+  "version": "0.0.0",
+  "private": true,
+  "main": "./BannerSlider.js"
+}

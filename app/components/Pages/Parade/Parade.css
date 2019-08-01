@@ -1,0 +1,516 @@
+/* Center Section*/
+
+.parade-video-text {
+  font-weight: 400 !important;
+}
+
+.parade-title-container, .parade-quote-container {
+  position: relative;
+  z-index: 100;
+}
+
+.parade-title-container {
+  height: 45vh;
+}
+
+.parade-quote-container {
+  padding: 10px 0px;
+  margin-bottom: 30px;
+}
+
+.parade-title-content {
+  vertical-align: middle;
+  display: table-cell;
+}
+
+.parade-title-text {
+  padding: 80px 0px;
+  font-family: Lato;
+}
+.parade-quote-text {
+  padding: 40px 0px;
+  font-family: Lato;
+}
+
+.text-title {
+  font-weight: 200;
+  font-size: 48px;
+  font-family: Lato;
+  letter-spacing: -0.06em;
+  margin-bottom: 8px;
+  /*text-shadow: 0px 1px 2px rgba(0,0,0,0.62);*/
+}
+
+.quote-title {
+  font-weight: 300 !important;
+  font-size: 36px !important;
+  margin-bottom: 15px !important;
+  line-height: 1.4;
+}
+
+.text-subtitle {
+  font-size: 24px;
+  font-weight: 300;
+}
+
+.svg {
+  height: 90px;
+  width: 90px;
+}
+
+
+/* News-card section*/
+
+.news-item {
+  padding-left: 7px;
+  padding-right: 7px;
+}
+
+.news-link:hover, .news-link:active, .news-link:visited, .news-link:focus {
+  text-decoration: none !important;
+}
+
+.card-container {
+  overflow: hidden;
+  position: relative;
+  box-shadow: 0px 3px 4px rgba(0, 0, 0, .1), 0px 0 2px rgba(0, 0, 0, .1);
+  border-top-left-radius: 3px;
+  border-top-right-radius: 3px;
+  transition: transform .24s, box-shadow .24s;
+}
+
+.rules-container {
+  overflow: hidden;
+  position: relative;
+  border-top-left-radius: 3px;
+  border-top-right-radius: 3px;
+}
+
+.card-image-container {
+  position: relative;
+  width: 100%;
+  z-index: 0;
+  padding-top: 60%;
+}
+
+.card-image {
+  top: 0px;
+  bottom: 0px;
+  left: 0px;
+  right: 0px;
+  position: absolute;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  height: 100%;
+  width: 100%;
+}
+
+.card-text {
+  border-radius: 2px;
+  position: relative;
+  padding: 10px 20px;
+  height: 12em;
+}
+
+.card-text-content {
+  font-family: Lato;
+  position: relative;
+  -webkit-font-smoothing: antialiased;
+}
+
+.card-text-title {
+  color: #333;
+  font-size: 18px;
+  margin-top: 5px;
+  margin-bottom: 5px;
+  font-weight: 300;
+  line-height: 21px;
+}
+
+.card-meta {
+  display: inline-block;
+  padding-bottom: 10px;
+}
+
+.card-icon {
+  width: 40px;
+  height: 40px;
+  border-radius: 2px;
+  background-color: red;
+  display: inline-block;
+  vertical-align: middle;
+  background-size: contain;
+}
+
+.card-brand {
+  display: inline-block;
+  vertical-align: middle;
+  color: #333 !important;
+  text-decoration: none !important;
+  padding: 10px;
+  font-size: 16px;
+}
+
+.card-brand:hover {
+  text-decoration: none;
+}
+
+
+/* Rest of CSS*/
+
+.parade-container {}
+
+.parade-media {
+  position: relative;
+  overflow: hidden;
+  /*min-height: 400px;*/
+  height: 80vh;
+}
+
+.parade-cover-block {
+  backface-visibility: hidden;
+  overflow: hidden;
+  background-color: #ff9074;
+}
+
+.parade-cover-photo {
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  background: transparent;
+  background-attachment: fixed;
+  background: url(https://dh136thgitkrt.cloudfront.net/parade_cover.JPG);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  opacity: 0.7;
+  z-index: 300;
+  background: #232323;
+}
+
+.parade-cover-meta {
+  display: table;
+  position: relative;
+  width: 100%;
+  height: 100%;
+  z-index: 500;
+}
+
+.meta-middle {
+  vertical-align: middle;
+  display: table-cell;
+  color: #fff;
+  text-align: center;
+}
+
+.video-bg {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: auto;
+  height: auto;
+  min-width: 100%;
+  min-height: 100%;
+  z-index: 50;
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  transition: opacity .5s ease-out;
+}
+
+.play-video {
+  display: inline-block;
+}
+
+.video-icon:hover {
+  cursor: pointer;
+}
+
+.meta {
+  font-family: Lato;
+  -webkit-font-smoothing: antialiased;
+}
+
+.parade-title {
+  color: #FFF;
+  font-size: 48px;
+  font-weight: 700;
+  margin-bottom: 13px;
+}
+
+.article-title {
+  margin: 0px;
+  font-size: 36px !important;
+  margin-bottom: 20px;
+  letter-spacing: -.024em;
+}
+
+.parade-subtitle {
+  color: #FFF;
+  font-size: 24px;
+  font-weight: 300 !important;
+}
+
+.parade-video-subtitle{
+  color: #FFF;
+  font-size: 19px;
+}
+
+.parade-video {}
+
+.video {
+  background-color: #000;
+  position: fixed;
+  left: 0;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 1000;
+}
+
+.video-hidden {
+  opacity: 0;
+  z-index: -1000;
+}
+
+.row-table {
+  display: table;
+  table-layout: fixed;
+  height: 100%;
+  width: 100%;
+}
+
+.row-middle {
+  vertical-align: middle;
+  display: table-cell;
+  float: none;
+  width: 100%;
+  padding: 0px;
+}
+
+.video--play {
+  left: 0;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  position: absolute;
+  height: 100px;
+  width: 100px;
+  margin: auto;
+  display: inline-block;
+}
+
+.video-active {
+  max-width: 100%;
+}
+
+.icon-hidden {
+  display: none;
+}
+
+.video--close {
+  color: #767676;
+  cursor: pointer;
+  position: absolute;
+  right: 70px;
+  text-decoration: none;
+  top: 50px;
+}
+
+.exit {
+  color: #FFF;
+  font-size: 36px;
+}
+
+.parade-content {
+  margin: auto;
+  width: 100%;
+  z-index: 200;
+  text-align: left;
+  padding: 40px 0px;
+}
+
+.meta {
+  font-family: Lato;
+  font-weight: 300;
+  -webkit-font-smoothing: antialiased;
+}
+
+.title {
+  color: #333;
+  font-size: 56px;
+  font-weight: 300;
+}
+
+.quote-title {
+  color: #333;
+  font-size: 40px;
+  font-weight: 600;
+}
+
+.quote-subtitle {
+  color: #333;
+  font-size: 36px;
+  font-weight: 300;
+  text-align: right;
+}
+
+.subtitle {
+  color: #333;
+  font-size: 24px;
+  font-weight: 300;
+}
+.newsSubtitle {
+  color: #ff6a6a;
+  font-size: 32px
+}
+
+.intro, .quote, .gallery {
+  padding-top: 20px;
+  margin: 0 auto;
+  margin-bottom: 10px;
+}
+
+.parade-intro {
+  display: inline-block;
+  font-size: 2rem;
+}
+
+.title-author {
+  font-size: 24px;
+}
+
+.image {
+  text-align: center;
+}
+
+.partner-images {
+  border-top: 1px solid #dce0e0
+}
+
+.partner-image {
+  height: 200px;
+  background: #fcfcfc;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.gallery {
+  color: black;
+}
+
+.gallery div {
+  margin: 0px !important;
+}
+
+.gallery div a img {
+  object-fit: cover;
+}
+
+.partner-title {
+  margin-bottom: 30px;
+}
+
+.photos-title {
+  font-weight: 300;
+  text-align: center;
+}
+
+.media {
+  width: 100%;
+}
+
+.media-icon {
+  backface-visibility: hidden;
+  position: relative;
+  display: inline-block;
+  vertical-align: bottom;
+  overflow: hidden;
+  background-color: #bbb;
+  border-radius: 25%;
+}
+
+@media (max-width: 768px) {
+  .video--close {
+    right: 10px;
+  }
+  .text-signature-close {
+    margin: 20px 0px;
+  }
+
+  .subtitle {
+    font-size: 19px !important;
+  }
+
+  .quote-title {
+    font-size: 22px !important;
+    line-height: 1.1;
+  }
+
+  .text-title {
+    font-size: 29px;
+  }
+
+  .parade-title {
+    font-size: 36px;
+  }
+
+  .parade-text-subtitle{
+    font-size: 0.8em;
+
+  }
+  .parade-title-container{
+    height: 40vh;
+  }
+}
+
+@media (min-width: 768px) {
+  /*.container {
+    width: 770px;
+  }*/
+  .quote-title {
+    font-size: 32px !important;
+    line-height: 1.2;
+  }
+  .text-title {
+    font-size: 36px;
+  }
+}
+
+@media (min-width: 992px) {
+  .quote-title {
+    font-weight: 300 !important;
+    font-size: 36px !important;
+    margin-bottom: 15px !important;
+    line-height: 1.4;
+  }
+
+  .text-title {
+    font-size: 56px;
+  }
+}
+
+@media (min-width: 1128px) {
+  /*.container {
+    width: 1080px;
+  }*/
+
+  .text-title {
+    font-size: 64px;
+  }
+}
+
+@media only screen and (max-device-width: 768px){
+
+}

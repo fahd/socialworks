@@ -1,0 +1,6 @@
+{
+  "name": "WarmestWinter",
+  "version": "0.0.0",
+  "private": true,
+  "main": "./WarmestWinter.js"
+}

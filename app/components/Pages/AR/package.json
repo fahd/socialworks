@@ -1,0 +1,6 @@
+{
+  "name": "AR",
+  "version": "0.0.0",
+  "private": true,
+  "main": "./AR.js"
+}

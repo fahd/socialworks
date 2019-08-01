@@ -1,0 +1,760 @@
+/*Header for Open Mike*/
+
+.container, .mike-container, .action-container, .feedback-container {
+  position: relative;
+  z-index: 100;
+}
+
+.container, .action-container, .feedback-container {
+  overflow: hidden;
+}
+
+.container {
+  height: 80vh;
+}
+
+.mike-container {
+  height: 600px;
+}
+
+.action-container {
+  height: 70vh;
+}
+
+.feedback-container {
+  height: 500px;
+}
+
+.bg, .mike-bg, .overlay, .mike-overlay, .action-overlay, .feedback-overlay, .feedback-bg, .mike-youmedia {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  bottom: 0px;
+  right: 0px;
+}
+
+.bg {
+  background: url(https://dh136thgitkrt.cloudfront.net/openmike/open-mike-cover-page.jpg);
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+  opacity: 1;
+}
+
+.feedback-bg {
+  background: url(https://dh136thgitkrt.cloudfront.net/survey+background.jpg);
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+  opacity: 1;
+}
+
+.feedback-overlay {
+  background-color: #232323;
+  opacity: 0.7;
+  z-index: 100;
+}
+.overlay {
+  background: #232323;
+  z-index: 51;
+  opacity: 0.5;
+}
+
+.action-overlay {
+  background-color: #F5f5f5;
+  opacity: 1;
+}
+
+.mike-bg{
+  background: url(https://dh136thgitkrt.cloudfront.net/openmike/mikehawkins.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+  z-index: 300;
+}
+.mike-youmedia{
+  background: url(https://dh136thgitkrt.cloudfront.net/YOUmedia-teens.jpg);
+  background-size: cover;
+  background-position: center ;
+  background-repeat: no-repeat;
+  z-index: 100;
+}
+
+.mike-overlay {
+  /*background: linear-gradient(160deg, #8fd679 17%, #FF9800 90%);*/
+  background: linear-gradient(160deg, #8fd679 17%, #4adc92 90%);
+  opacity: 0.95;
+  z-index: 200;
+}
+
+.header-container {
+  padding-left: 30px;
+  padding-right: 30px;
+  height: 100%;
+}
+
+.mike-content {
+  padding-left: 30px;
+  padding-right: 30px;
+  height: 100%;
+  width: 60%;
+  float: right;
+}
+
+
+.meta {
+  font-family: Lato;
+  -webkit-font-smoothing: antialiased;
+  color: #FFF;
+}
+
+.meta:hover {
+  color: #FFF;
+}
+
+.subtitle {
+  font-size: 28px;
+  font-weight: 300;
+  margin-top: 10px;
+}
+
+.dark,
+.dark:hover,
+.dark:active,
+.dark:visited,
+.dark:focus{
+  color:#333;
+}
+
+.rules-container{
+  padding-top: 20px;
+}
+
+.sub-register{
+  font-weight: 300;
+  font-size: 48px;
+}
+
+.sub-feedback {
+  font-size: 72px;
+  font-weight: 300;
+  text-shadow: 0px 1px 2px rgba(0,0,0,0.62);
+}
+
+
+.mike-text{
+  color: #FFF;
+  font-weight: 400;
+  font-size: 22px;
+  margin-bottom: 10px;
+
+}
+
+.stats-color {
+  text-shadow: 0px 2px 2px rgba(0,0,0,0.32);
+}
+
+.btn-info {
+  display: block;
+  margin-top: 20px;
+}
+
+.button {
+  display: inline-block;
+  padding: 7px;
+  padding-left: 20px;
+  padding-right: 20px;
+  font-size: 22px;
+  font-weight: 400;
+  color: #3dcb84;
+  background-color: transparent;
+  border: 2px solid #3dcb84;
+  border-radius: 28px;
+  transition: all .3s;
+}
+
+.button-red,
+.button-red:hover,
+.button-red:active,
+.button-red:focus,
+.button-red:visited {
+  color: #FFF !important;
+  text-decoration: none !important;
+  background-color: #ff6a6a !important;
+  border: 2px solid #ff6a6a !important;
+}
+
+
+
+
+.action-button-container {
+  margin-top: 24px;
+}
+.action-button {
+  padding: 5px 20px;
+}
+.fa {
+  margin-left: 5px;
+  font-size: 1.1em;
+}
+
+
+.button:hover {
+  color: #FFF;
+  text-decoration: none !important;
+  background-color: #40d58b;
+  border: 2px solid #40d58b;
+}
+
+
+.button:active,
+.button:focus {
+  text-decoration: none !important;
+  color: #3dcb84;
+  background-color: transparent;
+  border: 2px solid #3dcb84;
+}
+
+.container-table {
+  position: relative;
+  display: table;
+  width: 85%;
+  height: 100%;
+  z-index: 500;
+}
+
+.header-content {
+  vertical-align: middle;
+  display: table-cell;
+  text-align: left;
+  float: none;
+  width: 100%;
+}
+
+.logo-container {
+  margin-bottom: 20px;
+}
+
+.header-image {
+  display: inline-block;
+  max-width: 100%;
+}
+
+.aboutOpenMike {
+  max-width: 696px;
+}
+
+/* Start rest of content*/
+
+.title-container {
+  position: relative;
+  /*background-color: #FFF;*/
+}
+
+.title-container {
+  padding-left:24px;
+  padding-right: 24px;
+  z-index: 300;
+}
+
+.openmike-container {
+  padding-top: 80px;
+  padding-bottom: 60px;
+  max-width: 650px;
+  margin: 0px auto 36px;
+}
+
+.text-content {
+  font-family: Lato;
+  color: #484848;
+}
+
+.rules {
+  padding-top: 100px;
+}
+
+.text-header {
+  margin: 0px;
+  letter-spacing: -0.02em;
+  padding-top: 5px;
+  padding-bottom: 5px !important;
+}
+
+.text-title {
+  font-weight: 300;
+  font-size: 48px;
+  margin: 30px;
+  text-align: center;
+
+  /*text-shadow: 0px 1px 2px rgba(0,0,0,0.62);*/
+}
+
+.rules-header{
+  font-size:48px;
+}
+
+.text-subtitle {
+  font-weight: 300;
+  font-size: 36px;
+  margin-bottom: 10px;
+}
+
+.statistics-container {
+  padding: 50px 0px;
+  position: relative;
+}
+
+.statistics-bg {
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  background: url(https://dh136thgitkrt.cloudfront.net/openmike/stats-cover.JPG);
+  background-size: cover;
+  background-attachment: fixed;
+  z-index: 100;
+
+}
+
+.text-body {
+  font-weight: 300;
+  color: #666;
+  word-wrap: break-word;
+  line-height: 25px;
+  word-wrap: break-word !important;
+  font-size: 22px;
+  line-height: 28px;
+  letter-spacing: -0.2px;
+}
+
+.text-body-header {
+  max-width: 750px;
+}
+
+.text-stats {
+  font-family: 'Helvetica Neue';
+  text-align: center;
+  font-size: 64px;
+  font-weight: 700;
+  border-radius: 0px !important;
+  z-index: 99;
+  color: #fff;
+  margin-bottom: 48px;
+}
+
+.text-stats-body{
+  z-index: 100;
+  font-weight: 400;
+  text-align: center;
+  color: #fff;
+}
+
+.text-stats-title{
+  text-align: center;
+  font-weight: 300;
+}
+
+.text-stats-container{
+  opacity: 0;
+}
+
+.slideUp{
+  -webkit-animation: slideUp 1s;
+  -moz-animation: slideUp 1s;
+  -o-animation: slideUp 1s;
+  animation: slideUp 1s;
+  opacity: 1;
+}
+
+@keyframes slideUp {
+    0% {
+        opacity: 0;
+        -webkit-transform: translateY(100px);
+        -moz-transform: translateY(100px);
+        -o-transform: translateY(100px);
+        transform: translateY(100px)
+    }
+    100% {
+        opacity: 1;
+        -webkit-transform: translateY(0);
+        -moz-transform: translateY(0);
+        -o-transform: translateY(0);
+        transform: translateY(0)
+    }
+    100%{
+      opacity: 1;
+    }
+}
+
+
+
+.row-stats{
+  /*padding-top:24px;*/
+}
+
+.video-bg {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: auto;
+  height: auto;
+  min-width: 100%;
+  min-height: 100%;
+  z-index: 50;
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  transition: opacity .5s ease-out;
+}
+
+
+/* Card Styling */
+
+.card-container {
+  overflow: hidden;
+  position: relative;
+  box-shadow: 0px 3px 4px rgba(0, 0, 0, .1), 0px 0 2px rgba(0, 0, 0, .1);
+  border-top-left-radius: 3px;
+  border-top-right-radius: 3px;
+  transition: transform .24s, box-shadow .24s;
+}
+
+.card-container:hover {
+  box-shadow: 12px 15px 20px 10px rgba(46, 61, 73, 0.15);
+}
+
+.rules-container{
+  overflow: hidden;
+  position: relative;
+  border-top-left-radius: 3px;
+  border-top-right-radius: 3px;
+}
+
+.card-container:hover {
+  transform: translateY(-7px)
+}
+
+.card-image-container {
+  position: relative;
+  width: 100%;
+  z-index: 0;
+  padding-top: 80%;
+}
+
+.rules-image-container {
+  position: relative;
+  width: 100%;
+  z-index: 0;
+  padding-top: 70%;
+}
+
+.rules-image-single{
+  padding-top:50%;
+}
+
+.card-image {
+  top: 0px;
+  bottom: 0px;
+  left: 0px;
+  right: 0px;
+  position: absolute;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  height: 100%;
+  width: 100%;
+}
+
+.rules-image{
+  background-position: initial;
+}
+/*.card-image-text {
+  left: 0;
+  right: 0;
+  top: 45%;
+  position: absolute;
+  text-align: center;
+  font-family: Lato;
+  -webkit-font-smoothing: antialiased;
+  font-weight: 400;
+  font-size: 18px;
+  position: absolute;
+  color: #FFF;
+  z-index: 10;
+}*/
+
+.card-text {
+  border-radius: 2px;
+  position: relative;
+  padding: 10px 20px;
+  height: 12em;
+}
+
+.card-text-content {
+  font-family: Lato;
+  position: relative;
+  -webkit-font-smoothing: antialiased;
+}
+
+.card-meta {
+  display: inline-block;
+  padding-bottom: 10px;
+}
+
+.card-icon {
+  width: 40px;
+  height: 40px;
+  border-radius: 2px;
+  background-color: red;
+  display: inline-block;
+  vertical-align: middle;
+  background-size: contain;
+}
+
+.card-brand {
+  display: inline-block;
+  vertical-align: middle;
+  color: #333 !important;
+  text-decoration: none !important;
+  padding: 10px;
+  font-size: 16px;
+}
+
+.card-brand:hover {
+  text-decoration: none;
+}
+
+.icon-fader {
+  background-image: url(https://dh136thgitkrt.cloudfront.net/openmike/fader-icon.png)
+}
+
+.icon-booth {
+  background-image: url(https://dh136thgitkrt.cloudfront.net/openmike/booth-icon.jpeg)
+}
+
+.icon-chicago-tribune {
+  background-image: url(https://dh136thgitkrt.cloudfront.net/openmike/ct-icon.png)
+}
+
+.card-text-title {
+  color: #333;
+  font-size: 18px;
+  margin-top: 5px;
+  margin-bottom: 5px;
+  font-weight: 300;
+  line-height: 21px;
+}
+
+.rules-title{
+  font-weight: 300;
+  font-size: 20px;
+  line-height: 24px;
+}
+
+.rules-subtitle{
+  font-weight: 300;
+}
+
+.news-link:hover, .news-link:active, .news-link:visited, .news-link:focus {
+  text-decoration: none !important;
+}
+
+.statistics-overlay {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background: linear-gradient(120deg, #ff776a 20%, #E91E63 80%);
+  z-index: 200;
+  opacity: 0.95;
+}
+
+.card-fader {
+  background-image: url(https://dh136thgitkrt.cloudfront.net/openmike/openmike-newscard-1.jpg);
+}
+
+.card-booth {
+  background-image: url(https://dh136thgitkrt.cloudfront.net/openmike/openmike-newscard-2.jpg);
+}
+
+.card-chicago {
+  background-image: url(https://dh136thgitkrt.cloudfront.net/openmike/openmike-newscard-3.jpg);
+}
+
+.card-content {
+  overflow: hidden;
+  position: relative;
+  height: 200px;
+  background-color: red;
+}
+
+.news-item {
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+
+
+
+/* End Card Styling*/
+@media (max-width: 768px){
+  .mike-bg {
+    display:none;
+  }
+
+  .text-body {
+    font-size: 19px;
+  }
+
+  .logo-container {
+    text-align: center;
+  }
+
+  .rules-header{
+    font-size:36px;
+  }
+
+  .openmike-container {
+    padding-top: 40px;
+    padding-bottom: 40px;
+    padding-left: 30px !important;
+    padding-right: 30px !important;
+  }
+
+
+  .typeform-container {
+    padding: 0px !important;
+  }
+
+  .text-stats {
+    margin-bottom: 24px;
+  }
+
+  .sub-feedback {
+    font-size: 42px;
+  }
+
+  .feedback-container {
+    height: 400px;
+  }
+
+  .register-link {
+    text-align: center;
+  }
+
+  .mike-content {
+    width: 100%;
+  }
+
+  .openmike-title {
+    font-size: 36px;
+    margin: 36px 0px;
+  }
+
+
+  .mike-text-container {
+    text-align: center;
+  }
+
+  .mike-text {
+    font-size: 20px;
+  }
+
+  .sub-register{
+    font-weight: 300;
+    font-size: 24px;
+  }
+
+
+  .register-button {
+    text-align: center;
+  }
+
+
+  .aboutOpenMike {
+    text-align: center;
+    font-size: 22px;
+    line-height: 1.3;
+  }
+
+  .container-table{
+    width: 100%;
+  }
+}
+
+@media (min-width: 768px){
+
+  .mike-bg {
+    display:none;
+  }
+
+  .mike-content {
+    width: 100%;
+  }
+
+  .mike-text {
+    font-size: 28px;
+  }
+
+  .mike-text {
+    font-size: 24px;
+  }
+
+  .container-table{
+    width: 100%;
+  }
+
+
+}
+
+@media (min-width: 992px){
+  /*.title-container {
+    width: 750px;
+  }*/
+
+  .mike-bg {
+    display:block;
+  }
+
+  .mike-content {
+    width: 50%;
+  }
+
+  .mike-text {
+    font-size: 22px;
+  }
+
+  .text-stats {
+
+    font-size: 3em;
+
+  }
+
+  .container-table{
+    width: 85%;
+  }
+
+}
+
+@media (min-width: 1200px) {
+  /*.title-container {
+    width: 1080px;
+    padding-left:24px;
+    padding-right: 24px;
+  }*/
+
+  .mike-content {
+    width: 50%;
+  }
+
+  .mike-text {
+    font-size: 22px;
+  }
+
+
+  .text-stats {
+
+    font-size: 4em;
+
+  }
+}

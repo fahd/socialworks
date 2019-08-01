@@ -1,0 +1,38 @@
+.thank {
+  font-family: 'Lato' !important;
+  -webkit-font-smoothing: antialiased !important;
+  font-size: 19px !important;
+  font-weight: 300 !important;
+  word-break: break-all;
+  margin: 10px 0px;
+  padding: 20px 0px;
+}
+
+.partnerCardContainer {
+  overflow: hidden;
+  position: relative;
+  border-top-left-radius: 3px;
+  border-top-right-radius: 3px;
+  margin: 2px;
+}
+
+.partnerCard {
+  background-size: contain;
+  background-position: 50%;
+  text-align: center;
+  background-repeat: no-repeat;
+}
+
+@media (max-width: 768px) {}
+
+@media (min-width: 768px) {}
+
+@media (min-width: 992px) {}
+
+@media (min-width: 1067px) {}
+
+@media (min-width: 1200px) {
+  .container {
+    width: 1080px;
+  }
+}

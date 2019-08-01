@@ -1,0 +1,473 @@
+.content-meta {
+  max-width: 696px;
+  margin: 25px auto;
+}
+
+.bg, .overlay {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  bottom: 0px;
+  right: 0px;
+}
+
+.bg {
+  background: url(https://dh136thgitkrt.cloudfront.net/about-cover.jpg);
+  background-size: cover;
+  background-position: top center;
+  top: -50%;
+  background-repeat: no-repeat;
+  opacity: 0.5;
+}
+
+.overlay {
+  background: linear-gradient(130deg, #ffbf6a 0%, #1ee9e9 70%);
+  z-index: 51;
+  opacity: .7;
+}
+
+.header-content {
+  vertical-align: middle;
+  display: table-cell;
+  text-align: left;
+  float: none;
+  width: 100%;
+}
+
+.light {
+  color: #FFF;
+}
+
+.banner-container {
+  height: 100vh;
+  position: relative;
+  overflow: hidden;
+}
+
+.banner-title {
+  font-weight: 400;
+  font-size: 54px;
+  letter-spacing: -0.07em;
+  text-align: center;
+  margin-top: 0;
+  margin-bottom: 8px;
+  margin-bottom: -0.1em;
+  -webkit-font-smoothing: antialiased;
+}
+
+.banner-text {
+  letter-spacing: -0.02em;
+}
+
+.banner-subtitle {
+  font-size: 26px;
+  font-weight: 300;
+}
+
+.quote-meta {
+  width: 80%;
+  max-width: 850px;
+  margin: 40px auto;
+}
+
+.container {
+  padding-top: 100px;
+  padding-bottom: 100px;
+}
+
+.header {
+  position: relative;
+  overflow: hidden;
+}
+
+.header {
+  height: 80vh;
+}
+
+.header-photo {
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  opacity: 0.8;
+  background: transparent;
+  background-attachment: fixed;
+  background: url(https://dh136thgitkrt.cloudfront.net/about-founders.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.photo-content {
+  vertical-align: middle;
+  display: table-cell;
+  text-align: left;
+  float: none;
+  width: 100%;
+}
+
+.image-logo {
+  width: 150px;
+  display: inline-block !important;
+}
+
+.header-container {
+  margin-top: 190px;
+}
+
+.media-container {
+  position: relative;
+  overflow: hidden;
+  height: 100vh;
+}
+
+.openmike-container {
+  height: 100vh;
+}
+
+.quote-container {
+  position: relative;
+  background: linear-gradient(160deg, #ffa86a 20%, #e9781e 80%);
+}
+
+.quote-bg {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: red;
+}
+
+.photo-container {
+  position: relative;
+  height: 100%;
+}
+
+.header-overlay {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  opacity: 0.5;
+  background: #232323;
+}
+
+.header-subtitle {
+  color: #666 !important;
+  font-size: 24px;
+  font-weight: 300;
+}
+
+.quote-subtitle {
+  color: #FFF !important;
+  font-weight: 400;
+  font-size: 32px;
+  line-height: 1.3;
+}
+
+.header-description {
+  line-height: 1.5;
+  margin-top: 15px;
+  font-weight: 19px;
+}
+
+.meta-light {
+  font-family: Lato;
+  font-weight: 300;
+  -webkit-font-smoothing: antialiased;
+}
+
+.photo-text {
+  padding: 20px;
+}
+
+.header-meta {}
+
+.title {
+  color: #FFF;
+  font-size: 64px;
+  margin-bottom: 10px;
+}
+
+.photo-title-text {
+  font-size: 48px;
+}
+
+.subtitle {
+  font-weight: 300;
+  font-size: 24px;
+  color: #FFF;
+  margin-top: 10px;
+}
+
+.content-quote {
+  color: #fff;
+  font-size: 22px;
+  font-weight: 300;
+  margin: 24px 0px;
+}
+
+.header-title {
+  font-weight: 300;
+  font-size: 48px;
+  color: #FFF;
+  margin-top: 15%;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.fade-in {
+  animation-name: fadeInHeader;
+  animation-duration: 1s;
+  animation-fill-mode: both;
+}
+
+
+/* From OpenMike */
+
+.text-header {
+  margin: 0px;
+  letter-spacing: -0.02em;
+  padding-top: 5px;
+  padding-bottom: 5px !important;
+}
+
+.meta-dark {
+  font-family: Lato;
+  color: #333;
+  -webkit-font-smoothing: antialiased;
+  font-weight: 300;
+}
+
+.initiatives-title {
+  font-size: 48px;
+  margin-bottom: 8px;
+  font-weight: 300;
+}
+
+.about-image {
+  /*background-image: url(https://dh136thgitkrt.cloudfront.net/about-cover-mcd.jpg);*/
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  bottom: 0px;
+  right: 0px;
+  background-size: cover;
+  background-repeat: no-repeat;
+  width: 100%;
+  margin: 0 auto;
+}
+
+.about-image-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: linear-gradient(160deg, #ff776a 20%, #E91E63 80%);
+  opacity: 0.9;
+}
+
+.about-image-overlay-solid {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: #232323;
+  opacity: 0.85;
+}
+
+.about-image-overlay-openmike {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: #232323;
+  opacity: 0.6;
+}
+
+.parade-photo {
+  max-width: 60%;
+}
+
+.openmike-photo {
+  max-width: 60%;
+}
+
+.content-title {
+  font-weight: 700;
+  color: #f3876b;
+}
+
+.content-subtitle {
+  font-weight: 300;
+  font-size: 19px;
+}
+
+.button, .button:hover, .button:visited, .button:focus {
+  display: inline-block;
+  padding: 7px 45px;
+  font-size: 24px;
+  font-weight: 400;
+  font-family: Lato;
+  border-radius: 55px;
+  text-decoration: none;
+}
+
+.button-red, .button-red:hover, .button-red:visited, .button-red:focus {
+  background: #2fd984;
+  border: 2px solid #2fd984;
+  color: #FFF;
+  padding: 7px 30px;
+  box-shadow: 0 4px 5px rgba(0, 0, 0, 0.15);
+  text-shadow: 0 2px 2px rgba(0, 0, 0, 0.25);
+}
+
+.button-salmon, .button-salmon:hover, .button-salmon:visited, .button-salmon:focus {
+  background: #ff6a6a;
+  border: 2px solid #ff6a6a;
+  color: #fff;
+  padding: 7px 30px;
+}
+
+.button-orange, .button-orange:hover, .button-orange:visited, .button-orange:focus {
+  color: #f3876b;
+  border: 2px solid #f3876b;
+}
+
+.button-orange-fill, .button-orange-fill:hover, .button-orange-fill:visited, .button-orange-fill:focus {
+  color: #FFF;
+  background: #f3876b;
+}
+
+.parade-description {
+  margin: 7px 0px;
+}
+
+.fa {
+  margin-left: 5px;
+  font-size: 1.1em;
+}
+
+.your-voice {
+  padding: 50px;
+  width: 100%;
+  text-align: center;
+}
+
+.voice-title {
+  padding: 20px 0px;
+  font-size: 48px;
+}
+
+.voice-container {
+  padding: 150px 0px;
+}
+
+.parade-title-container {
+  height: 35vh;
+}
+
+.parade-title-content {
+  max-width: 696px;
+  margin: 0 auto;
+}
+
+.quote-title {
+  width: 100%;
+  margin: 0 auto;
+  font-size: 24px;
+  margin-bottom: 15px !important;
+  line-height: 1.5;
+}
+
+.media-icon {
+  backface-visibility: hidden;
+  position: relative;
+  vertical-align: bottom;
+  overflow: hidden;
+  text-align: center;
+}
+
+.media-icon img {
+  border-radius: 50%;
+}
+
+
+/* Keyframes */
+
+@keyframes fadeInHeader {
+  0% {
+    opacity: 0;
+    transform: translateY(-20px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+
+/* Media Queries*/
+
+@media only screen and (max-device-width: 768px) {
+  .header-container {
+    margin-top: 160px;
+  }
+  .header-row {
+    position: relative !important;
+    margin-left: 0px !important;
+  }
+}
+
+@media (max-width: 768px) {
+  .openmike-container {
+    min-height: 700px !important;
+  }
+  .banner-container {
+    height: 85vh;
+  }
+  .banner-title {
+    font-size: 36px;
+  }
+
+  .openmike-photo {
+    max-width: 80%;
+  }
+  .header-title {
+    font-weight: 300;
+    font-size: 36px;
+  }
+  .content-quote {
+    font-size: 19px;
+  }
+  .voice-container {
+    padding: 100px 0px;
+  }
+  .voice-title {
+    font-size: 24px;
+  }
+  .subtitle, .quote-subtitle, .header-description {
+    font-size: 19px !important;
+  }
+  .parade-title {
+    font-size: 36px !important;
+  }
+  .button, .button:hover, .button:active, .button:focus {
+    padding: 5px 20px;
+    font-size: 19px !important;
+  }
+}
+
+@media (min-width: 768px) {}
+
+@media (min-width: 992px) {}
+
+@media (min-width: 1200px) {}

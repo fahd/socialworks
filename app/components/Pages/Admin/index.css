@@ -1,0 +1,142 @@
+.adminContainer {
+  audio {
+    display: none;
+  }
+}
+
+.container {
+  min-height: 100%;
+  height: 100vh;
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.bg {
+  background-repeat: no-repeat;
+  background-size: cover;
+  opacity: 1;
+  background-color: #333;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+}
+
+.formContainer {
+  -ms-flex-align: center;
+  position: relative;
+  align-items: center;
+  -ms-flex-positive: 1;
+  flex-grow: 1;
+  -ms-flex-pack: center;
+  justify-content: center;
+  margin: 0 5%;
+  padding-bottom: 8vh;
+  -ms-flex-negative: 0;
+  flex-shrink: 0;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.form {
+  display: flex;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  max-width: 700px;
+  width: 100%;
+  color: #738a94;
+  font-size: 1.9rem;
+  line-height: 1.5em;
+  font-weight: 100;
+}
+
+.formBody {
+  position: relative;
+  margin: 30px auto;
+  padding: 40px;
+  max-width: 400px;
+  width: 100%;
+  border: 1px solid #c7dce6;
+  background: #fff;
+  border-radius: 5px;
+  text-align: left;
+}
+
+.close {
+  position: absolute;
+  right: 10px;
+  top: 10px;
+  z-index: 300;
+  cursor: pointer;
+}
+
+.inputContainer {
+  display: block;
+  position: relative;
+}
+
+.fa {
+  position: absolute;
+  top: 50%;
+  left: 10px;
+  z-index: 2;
+  width: 20px;
+  height: 20px;
+  fill: #a0afb6;
+  transform: translateY(-10px);
+}
+
+.inputContainer input {
+  display: block;
+  width: 100%;
+  height: 40px;
+  margin-bottom: 10px;
+  padding: 10px 50px;
+  border: 1px solid #d6e3eb;
+  color: #333;
+  font-size: 1.6rem;
+  line-height: 1em;
+  font-weight: 300;
+  -webkit-user-select: text;
+  user-select: text;
+  border-radius: 4px;
+  transition: border-color .15s linear;
+  -webkit-appearance: none;
+  padding: 10px 10px 10px 35px;
+  border: 1px solid #c7dce6;
+  font-size: 1rem;
+  line-height: 1.4em;
+  font-weight: 100;
+}
+
+.alert {
+  font-size: 19px;
+  padding: 10px;
+  font-weight: 300;
+  border: 1px solid red !important;
+}
+
+.errorMessage {
+  color: red !important;
+  font-size: 13px !important;
+  font-weight: 300;
+  font-family: Helvetica Neue;
+  padding: 0px;
+  margin-bottom: -10px;
+}
+
+.btn {
+  width: 100%;
+  color: #fff;
+  background: #ff9898;
+  transition: all 0.3s ease;
+}
+
+.btn:hover, .btn:focus, .btn:active, .btn:visited {
+  color: #fff;
+  background: #ff6a6a;
+}

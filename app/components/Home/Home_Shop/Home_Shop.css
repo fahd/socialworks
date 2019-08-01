@@ -1,0 +1,166 @@
+.shop-title {
+  color: #333;
+  font-size: 36px;
+  font-weight: 300;
+  margin-bottom: 10px;
+}
+
+.shop-overlay {
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(to right, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 1) 100%);
+  position: absolute;
+}
+
+.meta {
+  font-family: Lato;
+  font-weight: 300;
+  color: #333;
+  letter-spacing: -.04em;
+}
+
+.shop-subtitle {
+  font-size: 24px;
+  font-weight: 300;
+  color: #333;
+}
+
+.button, .button:hover, .button:visited, .button:focus {
+  display: inline-block;
+  font-family: Lato;
+  -webkit-font-smoothing: antialiased;
+  padding: 8px 20px;
+  margin-top: 10px;
+  font-size: 19px;
+  white-space: nowrap;
+  letter-spacing: -0.01em;
+  font-weight: 400;
+  color: #fff;
+  background-color: #ff6a6a;
+  /*text-shadow: 0px 1px 2px rgba(0,0,0,0.62);*/
+  border: 1px solid #ff6a6a;
+  border-radius: 28px;
+  transition: all .3s;
+  text-decoration: none;
+  text-align: center;
+  margin-top: 24px;
+  /*box-shadow: 0 4px 5px rgba(0, 0, 0, 0.15);*/
+}
+
+.fa {
+  margin-left: 10px;
+  font-size: 1.1em;
+}
+
+
+/*about empower*/
+
+.col-table {
+  display: flex;
+  min-height: 500px;
+  background-color: #FFF;
+  padding: 0;
+}
+
+.col-shop {
+  flex-direction: column;
+  flex: 1 0 50%;
+  background: url(https://dh136thgitkrt.cloudfront.net/shop-cover.jpg);
+  background-size: cover;
+  background-position: center;
+  text-align: center;
+  position: relative;
+}
+
+.col-shop-top {
+  display: block;
+  height: 400px;
+  width: 100%;
+}
+
+.pull-left {
+  float: left;
+}
+
+.shop-content {
+  flex-direction: column;
+  flex: 1 0 40%;
+  align-self: center;
+  height: 100%;
+  padding: 40px;
+  letter-spacing: -0.02em;
+  text-align: center;
+}
+
+.shop-container {
+  padding: 0;
+  overflow: hidden;
+}
+
+.play-shop {
+  display: inline-block;
+  position: absolute;
+  display: table-cell;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  transform: translateY(50%);
+}
+
+.shop-icon:hover {
+  cursor: pointer;
+}
+
+.iframe {
+  vertical-align: bottom !important;
+  border: none !important;
+  border: 0;
+  width: 100%;
+  height: 100%;
+  display: block;
+  position: absolute;
+  left: 0px;
+  top: 0px;
+  z-index: 1;
+}
+
+.show-shop {
+  z-index: 1;
+}
+
+@media (max-width: 768px) {
+  .col-table {
+    width: 100%;
+    min-height: initial;
+  }
+  .col-shop-top {
+    height: 400px;
+  }
+  .shop-content {
+    margin: 0px;
+  }
+  .col-shop {
+    display: block;
+  }
+  .col-shop-desk{
+    display: none;
+  }
+  .col-shop-full {
+    display: block !important;
+  }
+  .shop-content {
+    width: 100%;
+  }
+}
+
+@media only screen and (max-device-width: 768px) {
+  .shop-title {
+    font-size: 36px;
+  }
+  .shop-subtitle {
+    font-size: 19px;
+  }
+}

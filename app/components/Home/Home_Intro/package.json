@@ -1,0 +1,6 @@
+{
+  "name": "Home_Intro",
+  "version": "0.0.0",
+  "private": true,
+  "main": "./Home_Intro.js"
+}

@@ -1,0 +1,6 @@
+{
+  "name": "CPS_Letter",
+  "version": "0.0.0",
+  "private": true,
+  "main": "./CPS_Letter.js"
+}

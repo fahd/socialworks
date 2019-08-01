@@ -1,0 +1,707 @@
+/* Intro */
+
+
+.aboutContainer {
+  /*margin-top: 75px;*/
+}
+
+.banner-container {
+  height: 75vh;
+}
+
+
+.bg, .overlay {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  bottom: 0px;
+  right: 0px;
+}
+
+.inspire-subtitle {
+  color: #6ab1ff !important;
+  font-weight: 400 !important;
+  font-size: 24px !important;
+}
+.header-motto {
+  font-weight: 500 !important;
+  font-size: 36px !important;
+  color: #6ab1ff !important;
+}
+
+.bg {
+  background: url(https://dh136thgitkrt.cloudfront.net/jeuros.jpg);
+  background-size: cover;
+  background-position: top center;
+  top: -10%;
+  background-repeat: no-repeat;
+  opacity: 1;
+}
+
+.overlay {
+  background: #333;
+  z-index: 51;
+  opacity: .2 ;
+}
+
+.header-container {
+  position: relative;
+  padding-left: 30px;
+  padding-right: 30px;
+  height: 100%;
+}
+
+.header-content {
+  vertical-align: middle;
+  display: table-cell;
+  text-align: left;
+  float: none;
+  width: 100%;
+}
+
+.container {
+  position: relative;
+  overflow: hidden;
+}
+
+.mission-container {
+  overflow: visible  !important;
+}
+
+.background {
+  width: 100%;
+  height: 100%;
+}
+
+.content {
+  max-width: 1080px;
+  margin: 0 auto;
+  padding-top: 80px;
+  margin-top: 30px;
+  height: 100%;
+  width: 100%;
+  max-width: 1080px;
+  padding-left: 50px;
+  padding-right: 50px;
+  text-align: center;
+}
+
+.founder-content {
+  padding: 0;
+  margin: 0;
+  max-width: 100%;
+  width: 100%;
+}
+
+.pos-content {
+  margin-top: 0px;
+  margin-bottom: 20px;
+  padding: 50px;
+}
+
+.slogan {
+  width: 730px;
+  max-width: 100%;
+  margin: 0 auto;
+}
+
+.about-image {
+  background-image: url(https://consequenceofsound.files.wordpress.com/2016/09/chance-aahh.jpg?quality=80);
+  /*background-image: url(https://dh136thgitkrt.cloudfront.net/about-cover-mcd.jpg);*/
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  width: 90%;
+  margin: 0 auto;
+  height: 600px;
+}
+
+.meta {
+  font-family: Lato;
+  -webkit-font-smoothing: antialiased;
+  color: #333;
+}
+
+.founder-label {
+  text-align: center;
+  font-weight: 300;
+  margin: 10px 0px;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  right: 0;
+}
+
+.svg {
+  width: 100px;
+  height: 100px;
+}
+
+.title {
+  font-weight: 300;
+    font-size: 36px;
+    letter-spacing: -0.02em;
+    text-align: center;
+    margin-top: 0;
+    margin-bottom: 8px;
+    margin-bottom: 20px;
+}
+
+.subtitle {
+  font-size: 22px;
+  font-weight: 300;
+}
+
+.banner-title {
+  font-weight: 700;
+
+
+}
+
+.banner-text {
+  letter-spacing: -0.02em;
+}
+
+.banner-subtitle {
+  font-size: 36px;
+  font-weight: 500;
+
+}
+
+.header-subtitle {
+  color: #666;
+  font-size: 19px;
+  font-weight: 300;
+}
+
+.header-description {
+  line-height: 1.4em;
+  text-align: left;
+  margin-top: 15px;
+}
+
+.btn-info {
+  display: block;
+  margin-top: 20px;
+}
+
+.button, .button:hover, .button:visited, .button:focus {
+  display: inline-block;
+
+  margin-top: 10px;
+  font-size: 20px;
+  letter-spacing: -0.02em;
+  font-weight: 400;
+  color: #6ab1ff;
+  border-radius: 28px;
+  transition: all .3s;
+  text-decoration: none;
+  text-align: center;
+  margin-top: 24px;
+
+}
+
+.button-container {
+  text-align: center;
+}
+
+.fa {
+  margin-left: 10px;
+  font-size: 1.1em;
+}
+
+.fade-in {
+  animation-name: fadeInHeader;
+  animation-duration: 1s;
+  animation-fill-mode: both;
+}
+
+@keyframes fadeInHeader {
+  0% {
+    opacity: 0;
+    transform: translateY(-20px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+
+/* The Approach Section */
+
+.text-title {
+  font-weight: 300;
+  font-size: 64px;
+  margin-bottom: 8px;
+  /*text-shadow: 0px 1px 2px rgba(0,0,0,0.62);*/
+}
+
+.founder-title {
+  font-size: 52px;
+  color: #6ab1ff;
+}
+
+.founder-name {
+  font-size: 24px;
+  margin: 8px 0px;
+  text-align: left;
+}
+
+.acc-content-title {
+  font-size: 36px;
+  letter-spacing: -1px;
+}
+
+.acc-content-subtitle {
+  margin: auto;
+}
+
+.text-subtitle {
+  font-size: 21px;
+  font-weight: 300;
+}
+
+.donate-container {
+  position: relative;
+  z-index: 100;
+  height: 400px;
+}
+
+.acc-container {
+  height: 400px;
+}
+
+.donate-overlay {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  bottom: 0px;
+  right: 0px;
+  background: linear-gradient(160deg, #ff776a 20%, #E91E63 80%);
+}
+
+.donate-content {
+  vertical-align: middle;
+  display: table-cell;
+}
+
+.acc-content {
+  width: 730px;
+  max-width: 100%;
+  margin: 0 auto;
+}
+
+.pos-title {
+  color: #333;
+  margin-bottom: 20px;
+  font-size: 36px;
+  letter-spacing: -1px;
+}
+
+.approach-title {
+  letter-spacing: -2px;
+}
+
+.founder-title {
+  margin-bottom: 20px;
+  font-size: 36px;
+}
+
+.pos-subtitle {
+  line-height: 1.4;
+  font-size: 20px
+}
+
+.donate-text {
+  margin: 0 5%;
+}
+
+.leadership-text-container {
+  margin: 0;
+  max-width: 696px;
+}
+
+.founder-text-container {
+  margin: 0 auto;
+  max-width: 696px;
+
+}
+
+.leadership-container {
+  position: relative;
+  height: 500px;
+}
+
+.founder-container {
+  position: relative;
+  max-width: 980px;
+}
+
+.founder-description {
+  word-wrap: break-word !important;
+  font-size: 19px;
+  line-height: 1.3;
+  color: #666;
+  line-height: 25px;
+  margin: 20px 0px;
+}
+
+/* Attributes Section */
+
+.shop-title {
+  color: #333;
+  font-size: 36px;
+  font-weight: 300;
+  margin-bottom: 10px;
+}
+
+
+/*.shop-overlay {
+  top: 0;
+  right: 0;
+  width: 30%;
+  height: 100%;
+  background: linear-gradient(to right, rgba(255, 255, 255, 0) 20%, rgba(255, 255, 255, 1) 100%);
+  position: absolute;
+}*/
+
+.shop-subtitle {
+  font-size: 20px;
+  font-weight: 300;
+  color: #666;
+}
+
+.fa {
+  margin-left: 10px;
+  font-size: 1.1em;
+}
+
+.col-table {
+  display: table;
+  min-height: 85vh;
+  background-color: #FFF;
+  padding: 0;
+}
+
+.col-shop {
+  display: table-cell;
+  height: 100%;
+  width: 60%;
+  overflow: hidden;
+  background-size: cover !important;
+  background-position: center !important;
+  background-repeat: no-repeat !important;
+  text-align: center;
+  position: relative;
+}
+
+.col-leader {
+  background: url(https://dh136thgitkrt.cloudfront.net/att-cover-1.jpg);
+}
+
+.acc-cover, .founder-cover {
+  position: relative;
+  height: 700px;
+  overflow: hidden;
+  z-index: 100;
+}
+
+.founder-cover {
+  height: 100vh;
+}
+
+.acc-bg, .acc-leader, .acc-founder {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  bottom: 0px;
+  right: 0px;
+  opacity: 1;
+}
+
+.acc-bg {
+  background: url(https://dh136thgitkrt.cloudfront.net/att-cover-2.jpg);
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat !important;
+}
+
+.acc-leader {
+  background: url(https://dh136thgitkrt.cloudfront.net/about-mcd.jpg?);
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat !important;
+}
+
+.acc-founder {
+  background-image: url(https://dh136thgitkrt.cloudfront.net/about-founders.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center -97px;
+  height: 90%;
+}
+
+.acc-cover-founder {
+  height: 600px;
+}
+.acc-cover-leader{
+  height: 600px;
+  background-color: #fcfcfc;
+}
+
+.col-shop-top {
+  display: block;
+  height: 40vh;
+  width: 100%;
+}
+
+.col-acc-inc {
+  display: block;
+  height: 80vh;
+  width: 100%;
+  background: url(https://dh136thgitkrt.cloudfront.net/att-cover-1.jpg)
+}
+
+.pull-left {
+  float: left;
+}
+
+.shop-content {
+  display: table-cell;
+  height: 100%;
+  padding: 80px;
+  margin: 0px;
+  letter-spacing: -0.02em;
+  text-align: center;
+}
+
+.values-mobile-container {
+  padding: 0;
+  overflow: hidden;
+}
+
+.play-shop {
+  display: inline-block;
+  position: absolute;
+  display: table-cell;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  transform: translateY(50%);
+}
+
+.shop-icon:hover {
+  cursor: pointer;
+}
+
+.show-shop {
+  z-index: 1;
+}
+
+.light {
+  color: #FFF;
+}
+
+
+.approach {
+  background-color: #fcfcfc;
+}
+
+/* TOOLTIP RIGHT */
+
+.tooltip-right {
+  position: fixed;
+  z-index: 100;
+  top: 50%;
+  border-radius: 100px;
+  right: 28px;
+  padding: 20px 0;
+  background-color: #fff;
+  box-shadow: 0 4px 9px 0 rgba(43, 43, 49, .1), 0 7px 14px 0 rgba(43, 43, 49, .13);
+  transition: right 0.5s;
+  -webkit-transition: right 0.5s;
+  margin-top: -42px;
+}
+
+.tooltip-right ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.tooltip-right ul li {
+  display: block;
+  position: relative;
+  cursor: pointer;
+  padding: none;
+}
+
+.tooltip-right ul li a {
+  padding: 10px 17px;
+  display: block;
+  position: relative;
+  z-index: 1;
+  width: 100%;
+  height: 100%;
+  cursor: pointer;
+  text-decoration: none;
+}
+
+.tooltip-right ul li a span {
+  box-shadow: inset 0 0 0 8px rgba(0, 0, 0, 0.3);
+  border-radius: 50%;
+  position: absolute;
+  z-index: 1;
+  height: 6px;
+  width: 6px;
+  box-shadow: inset 0 0 0 6px rgba(0, 0, 0, 0.4);
+  left: 50%;
+  top: 50%;
+  display: block;
+  margin: -3px 0 0 -3px;
+}
+
+.text--align {
+  text-align: left;
+}
+
+.founder-name-text{
+
+}
+
+
+/* Donate */
+
+
+
+/* Media Queries*/
+
+@media (max-width: 768px) {
+  .title {
+    font-size: 24px;
+    margin-top: 0;
+    margin-bottom: 8px;
+  }
+
+  .aboutContainer {
+    /*margin-top: 50px;*/
+  }
+
+
+  .approach {
+    height: 300px !important;
+  }
+
+  .container {
+    height: 450px;
+  }
+
+
+
+  .mission-container {
+    height: 100% !important;
+  }
+
+  .bg {
+    left: 0;
+    top: 0;
+  }
+
+
+  .header-motto {
+    font-size: 24px !important;
+  }
+
+  .approach-text{
+    padding: 10px;
+  }
+
+  .col-table {
+    width: 100%;
+    min-height: initial;
+  }
+  .col-shop {
+    display: block;
+  }
+  .shop-content {
+    width: 100%;
+    padding: 40px;
+  }
+  .content {
+    padding-left: 30px;
+    padding-right: 30px;
+  }
+
+  .acc-cover {
+    height: 400px;
+  }
+  .banner-subtitle {
+    font-size: 24px;
+  }
+
+  .shop-subtitle {
+    font-size: 19px;
+  }
+
+  .acc-cover-founder {
+    height: 400px !important;
+  }
+
+  .text-title {
+    font-size: 36px;
+  }
+
+  .header-description{
+    font-size: 19px;
+  }
+  .leadership-text-container{
+    padding: 50px;
+  }
+   .founder-text-container  {
+     padding: 20px;
+   }
+
+   .founder-label {
+     bottom: -10px;
+   }
+
+   .acc-founder {
+     height: 90%;
+     background-position: bottom;
+   }
+
+   .values-desktop-container {
+     display: none;
+   }
+
+}
+
+@media (min-width: 768px) {
+  .values-mobile-container {
+    display: block;
+  }
+  .values-desktop-container {
+    display: none;
+  }
+}
+
+@media (min-width: 992px) {
+  .leadership-container {
+    width: 696px;
+  }
+  .values-mobile-container {
+    display: none;
+  }
+  .values-desktop-container {
+    display: block;
+  }
+}
+
+@media (min-width: 1200px) {
+  .leadership-container {
+    width: 1080px;
+  }
+
+}

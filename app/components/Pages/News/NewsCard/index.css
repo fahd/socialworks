@@ -1,0 +1,663 @@
+.root {
+  position: relative;
+}
+
+.container {
+  position: relative;
+  padding-right: 15px;
+  padding-left: 15px;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.homeInitiativesTitle {
+  font-size: 36px;
+  font-weight: 300;
+  color: #6ab1ff !important;
+  margin: 60px 0px;
+}
+
+.cardTitle {
+  font-size: 19px !important;
+  font-weight: 400;
+}
+
+.cardDate {
+  font-size: 14px;
+  font-weight: 400;
+}
+
+.background {
+  width: 100%;
+  height: 100%;
+}
+.videoTitle {
+  text-transform: uppercase;
+  letter-spacing: -0.02em;
+  color: #FFF !important;
+  text-align: center;
+  font-size: 14px;
+}
+
+.content {
+  max-width: 1080px;
+  margin: 0 auto;
+  padding-top: 30px;
+  margin-top: 30px;
+  height: 100%;
+}
+
+.content-meta {
+  position: relative;
+  padding-top: 20px;
+  text-align: left;
+  left: 0;
+  right: 0;
+}
+
+.meta {
+  font-family: Lato;
+  -webkit-font-smoothing: antialiased;
+  color: #333;
+}
+
+.bg {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  bottom: 0px;
+  right: 0px;
+  background: url(https://dh136thgitkrt.cloudfront.net/greenlogo.png);
+  background-repeat: no-repeat;
+  background-position: center right;
+  opacity: 1;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  opacity: 1;
+  background: #FFF;
+}
+
+.title {
+  font-weight: 100;
+  font-size: 64px;
+  font-weight: 300;
+  line-height: .9;
+  margin-top: 10px;
+  letter-spacing: -0.04em;
+  text-align: center;
+  /*text-shadow: 0px 1px 2px rgba(0,0,0,0.62);*/
+  margin: 20px 0px;
+  color: #fff;
+}
+
+.title-large {
+  font-size: 56px;
+}
+
+.video-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  opacity: 0.5;
+  background: linear-gradient(210deg, rgb(110, 60, 148) 30%, rgb(0, 96, 239) 100%);
+  /*background: #333;*/
+}
+
+.row {}
+
+.subtitle {
+  padding: 24px 0px;
+  font-size: 19px;
+  font-weight: 300;
+  color: #fff;
+  text-align: center;
+}
+
+.donate-slider {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+
+.slider {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+.media {
+  position: relative;
+  display: block;
+  z-index: 100;
+}
+
+.media:before, .media:after {
+  content: " ";
+  display: table;
+}
+
+.media-photo {
+  display: inline-block;
+  width: 100%;
+}
+
+.button, .button:hover, .button:visited, .button:focus {
+  display: inline-block;
+  font-family: Lato;
+  -webkit-font-smoothing: antialiased;
+  padding: 5px 20px;
+  font-size: 20px;
+  letter-spacing: -0.02em;
+  font-weight: 400;
+  color: #ff6a6a;
+  background-color: #FFF;
+  /*text-shadow: 0px 1px 2px rgba(0,0,0,0.62);*/
+  border: 2px solid #ff6a6a;
+  border-radius: 28px;
+  transition: all .3s;
+  text-decoration: none;
+  text-align: center;
+  margin-top: 24px;
+  z-index: 1000;
+}
+
+.button-container {
+  text-align: center;
+}
+
+.fa {
+  margin-left: 10px;
+  font-size: 1.1em;
+}
+
+.svg {
+  transition: all .5s ease;
+  -moz-transition: all .5s ease;
+  -ms-transition: all .5s ease;
+  -webkit-transition: all .5s ease;
+  -o-transition: all .5s ease;
+  position: absolute;
+  top: 70%;
+  left: 50%;
+  width: 70px;
+  height: 70px;
+  margin: -35px 0 0 -35px;
+}
+
+.svg:hover {
+  transform: scale(1.4);
+}
+
+.videoThumbnail {
+  position: relative;
+  background: #000;
+  border-radius: 5px;
+  /*border: 3px solid #fff;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, .5);*/
+  box-shadow: 12px 15px 20px 0px rgba(46, 61, 73, 0.37);
+  width: 100%;
+  height: 550px;
+  display: inline-block;
+  overflow: hidden;
+  z-index: 2;
+  -webkit-transform: translateZ(0);
+  cursor: pointer;
+
+}
+
+.videoThumb {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  min-width: 100%;
+  min-height: 100%;
+  width: auto;
+  height: auto;
+  z-index: -100;
+  background-size: cover;
+  overflow: hidden;
+  opacity: 0.5;
+}
+
+.video-content {
+  transition: all .5s ease;
+  -moz-transition: all .5s ease;
+  -ms-transition: all .5s ease;
+  -webkit-transition: all .5s ease;
+  -o-transition: all .5s ease;
+  position: absolute;
+  width: 100%;
+  top: 25%;
+  padding: 0 30px;
+}
+
+.hero-module-container {
+  float: left;
+  display: block;
+  margin-left: 0%;
+  margin-bottom: 30px;
+}
+
+.cardContainer {
+  box-shadow: 2px 4px 8px 0px rgba(46, 61, 73, 0.2);
+  height: 440px;
+  display: block;
+  text-align: left;
+  position: relative;
+  background: #fff;
+  border-radius: 5px;
+  transition: all 0.3s ease;
+}
+
+.cardContainer:hover {
+  box-shadow: 12px 15px 20px 10px rgba(46, 61, 73, 0.15);
+  text-decoration: none !important;
+}
+
+.cardHeader {
+  height: 180px;
+  background-size: cover !important;
+  background-position: center top;
+  width: 100%;
+  background-color: #ff6a6a;
+  position: relative;
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+}
+
+.cardBio {
+  padding: 30px;
+}
+
+.cardHeaderOverlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: #333;
+  opacity: 0.85;
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+}
+
+.cardBio {
+  padding: 20px;
+  width: 100%;
+}
+
+.card--content-text {
+  font-size: 15px;
+  font-weight: 300;
+  color: #666;
+}
+
+.cardBio h1 {
+  font-size: 22px;
+}
+
+.cardBio>h1:hover {
+  text-decoration: none !important
+}
+
+.card:hover {
+  text-decoration: none !important;
+}
+
+
+/* Video Container */
+
+.video {
+  background-color: #000;
+  position: absolute;
+  left: 0;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 100;
+}
+
+.video-hidden {
+  opacity: 0;
+  z-index: -100;
+}
+
+.row-table {
+  display: table;
+  table-layout: fixed;
+  height: 100%;
+  width: 100%;
+}
+
+.row-middle {
+  vertical-align: middle;
+  display: table-cell;
+  float: none;
+  width: 100%;
+}
+
+.video--play {
+  left: 0;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  position: absolute;
+  height: 100px;
+  width: 100px;
+  margin: auto;
+  display: inline-block;
+}
+
+.video-active {
+  max-width: 100%;
+  position: absolute;
+  right: 0;
+  /* bottom: 0; */
+  top: 0;
+  left: 0;
+  min-width: 100%;
+  min-height: 100%;
+  width: 100%;
+  height: 52.9%;
+  overflow: hidden;
+  background-size: cover;
+}
+
+.icon-hidden {
+  display: none;
+}
+
+.video--close {
+  color: #767676;
+  cursor: pointer;
+  position: absolute;
+  right: 10px;
+  text-decoration: none;
+  top: 30px;
+}
+
+.exit {
+  color: #FFF;
+  font-size: 36px;
+}
+
+.mobile {
+  display: none;
+  margin-top: 20px;
+  text-align: left;
+}
+
+.mobile-svg {
+  font-size: 25px;
+  padding-right: 10px;
+}
+
+.hero-module {
+  display: block;
+  float: left;
+}
+
+.hero-module-avatar {
+  position: relative;
+  width: 150px;
+  height: 150px;
+  float: left;
+  margin-right: 10px;
+}
+
+.avatar {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  opacity: 0.9;
+  background-size: cover;
+  border-top-left-radius: 5px;
+  border-bottom-left-radius: 5px;
+}
+
+.avatar-warmestwinter {
+  background-image: url('https://dh136thgitkrt.cloudfront.net/warmestwinter/warmest-winter.jpeg')
+}
+
+.avatar-p2polls {
+  background-image: url('https://dh136thgitkrt.cloudfront.net/parade_cover.JPG')
+}
+
+
+.avatar-openmike {
+  background-image: url('https://dh136thgitkrt.cloudfront.net/openmike/open-mike-cover-page.jpg')
+}
+
+.avatar-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  opacity: 0.9;
+  border-top-left-radius: 5px;
+  border-bottom-left-radius: 5px;
+}
+
+.labelContainer {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  z-index: 50;
+}
+
+.label {
+  background: #ff6a6a;
+  border-radius: 2px;
+  overflow: hidden;
+  font-family: 'Lato';
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  color: #fff;
+  font-size: 13px;
+  letter-spacing: 0.04em;
+  line-height: 1;
+  padding: 5px 10px;
+}
+.avatar-overlay-kok {
+  background: #39daa9;
+}
+
+.avatar-overlay-p2polls {
+
+  background: #1e9ae9;
+
+}
+
+
+.avatar-overlay-warmestwinter {
+  background: #E91E63;
+}
+
+.avatar-overlay-openmike {
+  background: #7d42ff;
+}
+
+
+/* Media Queries */
+
+@media (max-width: 768px) {
+  .content {
+    margin-top: 120px;
+  }
+  .title {
+    line-height: 1;
+  }
+  .content-meta {
+    text-align: center;
+    padding-top: 0px !important;
+  }
+  .subtitle {
+    font-size: 19px;
+    line-height: 1.3em;
+    text-align: left;
+    margin: 38px 0px;
+    padding: 0px;
+  }
+  .title {
+    font-size: 32px !important;
+  }
+  .mobile {
+    display: block;
+  }
+  .mobile:hover {
+    cursor: pointer;
+  }
+  .videoThumb {
+    width: 100%;
+    background-size: 100% 100%;
+    top: 0px;
+    left: 0px;
+    /* fixed to left. Replace it by right if you want.*/
+    min-width: 100%;
+    min-height: 100%;
+    width: auto;
+    height: auto;
+  }
+
+
+  .svg {
+    top: 75%;
+  }
+}
+
+@media (min-width: 768px) {
+  /*.container {
+    height: 90vh;
+  }*/
+  .container {
+    width: 750px;
+  }
+  .media-photo {
+    width: 100px;
+  }
+  .expand-right {
+    text-align: center;
+  }
+  .content-meta {
+    padding-top: 0px !important;
+  }
+  .svg {
+    top: 75%;
+  }
+}
+
+@media (max-width: 992px) {
+  .content-meta {
+    text-align: center;
+    margin: 0 auto;
+  }
+  .title {
+    font-size: 48px;
+  }
+  .videoThumbnail {
+    height: 400px;
+  }
+}
+
+@media (min-width: 992px) {
+  .container {
+    width: 100%;
+  }
+  .content-meta {
+    text-align: left;
+    max-width: 992px;
+    margin: 0 auto;
+  }
+  .content-meta-initiatives {
+    max-width: none !important;
+  }
+  .expand-right {
+    text-align: left;
+  }
+  .media-photo {
+    width: 100%;
+  }
+  .expand-right {
+    width: 53%;
+    left: -10%;
+    top: 55px;
+    position: absolute;
+  }
+  .subtitle {
+    font-size: 19px;
+  }
+  .title {
+    font-size: 64px;
+  }
+  .svg {
+    top: 67.5%;
+  }
+}
+
+@media (min-width: 1128px) {
+  .subtitle {
+    font-size: 20px;
+  }
+  .title {
+    font-size: 64px;
+  }
+  .expand-right {
+    width: 60%;
+    left: -7%;
+    position: absolute;
+    top: 42px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .container {
+    width: 1200px;
+  }
+  .expand-right {
+    width: 151%;
+    left: -30%;
+    position: absolute;
+    top: 50px;
+  }
+  .title {
+    font-size: 64px;
+  }
+}
+
+@media only screen and (max-device-width: 768px) {
+  .videoThumb {
+    display: none;
+  }
+  .videoThumbnail {
+    width: 100%;
+    background: url(https://dh136thgitkrt.cloudfront.net/openmike/open_mike_1.jpg);
+    background-size: cover;
+  }
+  .video-overlay {
+    background: #333;
+    opacity: 0.7;
+  }
+  .svg {
+    top: 80%;
+  }
+}
+
+@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) {
+  .container {
+    height: 75vh;
+  }
+}

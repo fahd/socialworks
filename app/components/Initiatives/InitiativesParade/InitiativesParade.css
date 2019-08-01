@@ -1,0 +1,117 @@
+.parade {
+  position: relative;
+  overflow: hidden;
+}
+
+.parade{
+  min-height: 500px;
+}
+
+.image-border{
+  border-radius: 5px;
+  box-shadow: 0 1px 3px rgba(0,0,0,.5);
+  border: 3px solid #fff;
+}
+.parade-image{
+  width:60%;
+  float:left;
+}
+
+.parade-meta {
+  transform: translateY(0);
+}
+
+.parade-container {
+  margin-top: 70px;
+}
+
+
+.parade-photo {
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  background: transparent;
+  background-attachment: fixed;
+  background: url(https://dh136thgitkrt.cloudfront.net/parade-1.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.parade-overlay {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  opacity: 0.9;
+  background: linear-gradient(160deg, #e74b69 10%, rgb(239, 174, 167) 90%);
+}
+
+.meta {
+  font-family: Lato;
+  font-weight: 400;
+  -webkit-font-smoothing: antialiased;
+}
+
+.parade-meta {
+
+}
+
+.title {
+  color: #FFF;
+  font-size: 64px;
+  margin-bottom: 40px;
+}
+
+.subtitle{
+  font-weight: 400;
+  text-align: left;
+  font-size: 24px;
+  margin-top: 0px;
+  color: #FFF;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.fade-in {
+  animation-name: fadeInHeader;
+  animation-duration: 1s;
+  animation-fill-mode: both;
+}
+
+@keyframes fadeInHeader {
+  0% {
+     opacity: 0;
+     transform: translateY(-20px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.button{
+  float:left;
+  margin-top: 5px;
+  display:inline-block;
+  padding: 15px;
+  padding-top: 8px;
+  padding-bottom: 10px;
+  font-size: 20px;
+  background: #2fd984;
+  border: 2px solid #2fd984;
+  color: #FFF;
+  border-radius: 5%;
+  box-shadow: 0 4px 5px rgba(0,0,0,0.15);
+  text-shadow: 0 2px 2px rgba(0,0,0,0.25)
+}
+
+.button:hover{
+  background-color: #36ef93;
+  border: 2px solid #36ef93 ;
+  color: #FFF;
+}
